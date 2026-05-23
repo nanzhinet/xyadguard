@@ -54,6 +54,40 @@ with open('allow.txt', 'w') as f:
         if line.startswith('@'):
             f.write(line)
             
+print("应用 mod/whitelist.txt 过滤误拦截域名")
+mod_whitelist_path = '.././data/mod/whitelist.txt'
+whitelist_domains = set()
+with open(mod_whitelist_path, 'r', encoding='utf-8', errors='ignore') as f:
+    for line in f:
+        line = line.strip()
+        # 提取 @@||domain^ 中的域名
+        if line.startswith('@@||') and line.endswith('^'):
+            domain = line[4:-1]
+            if domain:
+                whitelist_domains.add(domain)
+
+print(f"mod 白名单共 {len(whitelist_domains)} 个域名，开始过滤拦截规则")
+
+with open('cleaned_adblock.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    adblock_lines = f.readlines()
+
+filtered_lines = []
+removed_count = 0
+for line in adblock_lines:
+    stripped = line.strip()
+    # 提取拦截规则中的域名（||domain^ 格式）
+    if stripped.startswith('||') and stripped.endswith('^'):
+        domain = stripped[2:-1]
+        if domain in whitelist_domains:
+            removed_count += 1
+            continue  # 在白名单里，跳过不写入
+    filtered_lines.append(line)
+
+with open('cleaned_adblock.txt', 'w', encoding='utf-8') as f:
+    f.writelines(filtered_lines)
+
+print(f"过滤完成，共移除 {removed_count} 条误拦截规则")
+
 current_dir = os.getcwd()
 adblock_file = os.path.join(current_dir, 'cleaned_adblock.txt')
 allow_file = os.path.join(current_dir, 'allow.txt')
