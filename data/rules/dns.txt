@@ -2,9 +2,9 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-05-23 20:08:10（北京时间）
+! Version: 2026-05-23 21:24:35（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 120117
+! Total count: 120130
 ||*.diwodiwo.xyz^
 ||*.exaapi.com^
 ||*.p2p.huya.com^
@@ -13112,6 +13112,7 @@
 ||alcaicsgoblet.qpon^
 ||alcamrjixsu.in^
 ||alcatza.com^
+||alcgdykdlmclu.com^
 ||alchemycosmos.shop^
 ||alchemymatchesconnections.com^
 ||alchimag.leftmany.pro^
@@ -53657,6 +53658,7 @@
 ||jhncmokruwmhd.website^
 ||jhnmpm.kiwoko.com^
 ||jhnwr.com^
+||jhpenp6fwwhjbfu.rest^
 ||jhprvk.skstoa.com^
 ||jhpwrn.laredoute.ch^
 ||jhqi.cn^
@@ -55913,6 +55915,7 @@
 ||knowunity.com/events^
 ||knphmeiypdwcu.space^
 ||knpocsexswplq.space^
+||knrafkhtlk.com^
 ||knrhwhkxytfiu.com^
 ||knsoknmyvyhab.website^
 ||knspyuburjnwa.space^
@@ -78468,6 +78471,7 @@
 ||qfnmqhacsscph.site^
 ||qfoiss.lendingtree.com^
 ||qfp.intuit.com^
+||qfprlpwvjnow.com^
 ||qfqbznmeuztgs.website^
 ||qfqgzbbjjutfs.site^
 ||qftpgz.socarrao.com.br^
@@ -81674,6 +81678,7 @@
 ||rjdmhl.icu^
 ||rjfskgjstkfts.website^
 ||rjg2.destinia.ly^
+||rjg4ojoohzj847jjfx2crv.cfd^
 ||rjgsjm.gigameubel.nl^
 ||rjguonqztwmgs.store^
 ||rjhfdigsyzfgt.website^
@@ -107718,6 +107723,7 @@
 ||vbeywdzjmxzzq.site^
 ||vbfprrpmkrdma.site^
 ||vbfrhhed.com^
+||vbglkfludcifa.site^
 ||vbgyniffuy.com^
 ||vbiefmqbhfcgx.space^
 ||vbjfvensrmnri.online^
@@ -109251,6 +109257,7 @@
 ||vudralqoi.com^
 ||vuevgiavjbplr.space^
 ||vufqinbxihvvf.buzz^
+||vufskqjnnhnjt.site^
 ||vughisospin.cyou^
 ||vugqkeanmhm.com^
 ||vuhcoxkaeacrc.space^
@@ -114936,6 +114943,7 @@
 ||xmglipnvxsqwm.site^
 ||xmgurghmn.com^
 ||xmgyreddpc.com^
+||xmhjqgqwjnnxs.online^
 ||xmhmbdggacnpr.space^
 ||xmhrjllcnynfs.website^
 ||xmjqvxiwacssu.site^
@@ -115976,6 +115984,7 @@
 ||xqfikpeuitfvn.online^
 ||xqfpgwarzkecj.website^
 ||xqfwuuzeuzkbz.space^
+||xqfyralwzajbx.website^
 ||xqgvmpalger.com^
 ||xqgvzvaneizyb.online^
 ||xqhfb9hzrs.com^
@@ -117294,6 +117303,7 @@
 ||yixxmqfcyjmbi.website^
 ||yiydsygynhskw.space^
 ||yiyemail.branch.rocks^
+||yiyfzwzlpxbym.site^
 ||yizghfwqrbhgy.space^
 ||yizj5fcwaj.com^
 ||yizjfsgpdtkpq.space^
@@ -118035,6 +118045,7 @@
 ||ytzisjouiwwsg.site^
 ||yu0123456.com^
 ||yuastejdigmex.site^
+||yuatxgdsuyevx.online^
 ||yuauqdgmehwrov.com^
 ||yubziosgvkweu.online^
 ||yuckbleaklyphooeywhen.com^
@@ -119218,6 +119229,7 @@
 ||zjwjcjiozdear.online^
 ||zjwwdgqpiecar.site^
 ||zjwwervhmwfyb.space^
+||zjxhgowqnqvjiq.com^
 ||zjxmrrgeqndlx.space^
 ||zjxpqkmybhkze.site^
 ||zjzain.aboutyou.bg^
@@ -119258,6 +119270,7 @@
 ||zkraktak.com^
 ||zksgjpokbsfle.online^
 ||zktpzpvozjuim.site^
+||zkutisahd.in^
 ||zkvovu2lj97q8o7773gig8wluuttop.cfd^
 ||zkvqdf.icu^
 ||zkvxgc.nissui-kenko.com^
