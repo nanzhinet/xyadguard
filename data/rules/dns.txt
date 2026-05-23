@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Title: GOODBYEADS
-! Homepage: https://github.com/8680/GOODBYEADS
+! Title: XYADGUARD
+! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-05-23 19:40:29（北京时间）
+! Version: 2026-05-23 20:08:10（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 120121
+! Total count: 120117
 ||*.diwodiwo.xyz^
 ||*.exaapi.com^
 ||*.p2p.huya.com^
@@ -31192,7 +31192,6 @@
 ||data.ricaud.com^
 ||data.rmsocio.realmadrid.com^
 ||data.sec.intl.miui.com^
-||data.sec.miui.com^
 ||data.securemetrics-apple.com^
 ||data.segugio.it^
 ||data.service.aware.com.au^
@@ -41590,7 +41589,6 @@
 ||foybdfdodvgva.rocks^
 ||fp-cdn.azureedge.net^
 ||fp-flame.vercel.app^
-||fp-it.fengkongcloud.com^
 ||fp-sa-it.fengkongcloud.com^
 ||fp-upload.dun.163.com^
 ||fp.bizjournals.com^
@@ -66097,7 +66095,6 @@
 ||minoizeapes.cfd^
 ||minorfortune.pro^
 ||minorscore.pro^
-||minorshort.weixin.qq.com^
 ||minotaur107.com^
 ||minstats.xyz^
 ||mintaza.xyz^
@@ -81570,6 +81567,7 @@
 ||rihbxnftttvlp.website^
 ||rihgimsatawp.in^
 ||rihhfqeqwimni.website^
+||rihtyyebssben.space^
 ||rihurxgrxghfh.online^
 ||rijedoryxzsye.site^
 ||rijzjihnxvley.website^
@@ -102174,7 +102172,6 @@
 ||tracker.adcluster.com.tr^
 ||tracker.affiliate.iqbroker.com^
 ||tracker.affirm.com^
-||tracker.ai.xiaomi.com^
 ||tracker.anandtech.com^
 ||tracker.atrapalo.com^
 ||tracker.au.zitcha.app^
@@ -111921,7 +111918,6 @@
 ||wl-cornholio.com^
 ||wl-pixel.index.digital^
 ||wl.bl.frequentvalues.com.au^
-||wl.jd.com^
 ||wl.uqwjdhgv.top^
 ||wl.yna.co.kr^
 ||wlachyhpbssxf.space^

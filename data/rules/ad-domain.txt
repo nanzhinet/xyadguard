@@ -1,5 +1,5 @@
-# GOODBYEADS Domain List
-# Homepage: https://github.com/8680/GOODBYEADS
+# XYADGUARD Domain List
+# Homepage: https://github.com/nanzhinet/xyadguard
 # Generated from GOODBYEADS DNS rules
 
 *.diwodiwo.xyz
@@ -31189,7 +31189,6 @@ data.rewards.riteaid.com
 data.ricaud.com
 data.rmsocio.realmadrid.com
 data.sec.intl.miui.com
-data.sec.miui.com
 data.securemetrics-apple.com
 data.segugio.it
 data.service.aware.com.au
@@ -41587,7 +41586,6 @@ foxtlytvs.com
 foybdfdodvgva.rocks
 fp-cdn.azureedge.net
 fp-flame.vercel.app
-fp-it.fengkongcloud.com
 fp-sa-it.fengkongcloud.com
 fp-upload.dun.163.com
 fp.bizjournals.com
@@ -66094,7 +66092,6 @@ minnow.tapas-software.net
 minoizeapes.cfd
 minorfortune.pro
 minorscore.pro
-minorshort.weixin.qq.com
 minotaur107.com
 minstats.xyz
 mintaza.xyz
@@ -81567,6 +81564,7 @@ riglingmorbose.qpon
 rihbxnftttvlp.website
 rihgimsatawp.in
 rihhfqeqwimni.website
+rihtyyebssben.space
 rihurxgrxghfh.online
 rijedoryxzsye.site
 rijzjihnxvley.website
@@ -102171,7 +102169,6 @@ tracker.adbinead.com
 tracker.adcluster.com.tr
 tracker.affiliate.iqbroker.com
 tracker.affirm.com
-tracker.ai.xiaomi.com
 tracker.anandtech.com
 tracker.atrapalo.com
 tracker.au.zitcha.app
@@ -111918,7 +111915,6 @@ wl-analytics.tsp.li
 wl-cornholio.com
 wl-pixel.index.digital
 wl.bl.frequentvalues.com.au
-wl.jd.com
 wl.uqwjdhgv.top
 wl.yna.co.kr
 wlachyhpbssxf.space
