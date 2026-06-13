@@ -2,9 +2,9 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-06-12 22:57:45（北京时间）
+! Version: 2026-06-13 11:40:55（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 231408
+! Total count: 231606
 
 ###AC_ad
 ###AD_160
@@ -13261,7 +13261,6 @@
 ##.sponsored-ad-label
 ##.sponsored-add
 ##.sponsored-ads
-##.sponsored-article
 ##.sponsored-article-item
 ##.sponsored-article-widget
 ##.sponsored-block
@@ -70011,7 +70010,6 @@ play.discoveryplus.com,play.hbomax.com,play.max.com#%#//scriptlet('json-prune', 
 play.discoveryplus.com,play.hbomax.com,play.max.com#%#//scriptlet('xml-prune', 'xpath(//*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start | //*[name()="Period"][not(.//*[name()="SegmentTimeline"] or .//*[name()="ContentProtection"])] | //*[name()="Period"][./*[name()="BaseURL"]][not(.//*[name()="ContentProtection"])])', '', '.mpd')
 play.doramasplus.net#%#//scriptlet('set-constant', 'openUp', 'noopFunc')
 play.esea.net###module-ads-home-bottom
-play.fyi.tv,play.history.com,play.aetv.com#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3_dai.js')
 play.geforcenow.com#$?##preStreamContainer { remove: true; }
 play.google.com#@#div[aria-label="Ads"]
 play.iporngay.com#%#//scriptlet('prevent-setTimeout', 'hasPopupBlocker')
@@ -73036,6 +73034,7 @@ reelsmunkey.com#%#//scriptlet('trusted-set-local-storage-item', 'adsTimer', '$no
 reelviews.net##.picHolder
 reference.medscape.com#%#//scriptlet("set-constant", "webmd.ads2.setPageTarget", "noopFunc")
 reflex.cz#@%#//scriptlet('ubo-acis.js', 'atob')
+refooty.com##.ad-placement-wrapper
 regex101.com#?#div > header + div > div + div:contains(Sponsors)
 regex101.com#?#div > header + div > div + div:has-text(Sponsors)
 regexlearn.com##.w-full.mb-3:has(a[href="/learn/regex-for-seo"])
@@ -74117,7 +74116,6 @@ sbs.com.au#%#//scriptlet('m3u-prune', '/redirector\.googlevideo\.com\/videoplayb
 sbs.com.au#%#//scriptlet('prevent-xhr', '/redirector\.googlevideo\.com\/videoplayback[\s\S]*?dclk_video_ads/')
 sbs.com.au#%#//scriptlet('remove-class', 'ad-controls', '.bitmovinplayer-container.ad-controls')
 sbs.com.au#%#//scriptlet('set-constant', 'odabd', 'false')
-sbs.com.au,10.com.au,news4jax.com,sbtnews.sbt.com.br,paramountplus.com,play.fyi.tv,play.history.com,play.aetv.com#%#function GoogleIma3Dai(){const t=t=>"object"==typeof t&&null!==t,e=e=>{if(!t(e))return{};const s={},i=Object.keys(e);for(let t=0;t<i.length;t+=1){const o=i[t];s[o]=String(e[o])}return s},s=t=>"string"==typeof t&&t.length>0?t:null,i=t=>{t.listeners=new Map},o=t=>{if("string"==typeof t)return[t];if(!Array.isArray(t))return[];const e=[];for(let s=0;s<t.length;s+=1){const i=t[s];"string"==typeof i&&e.push(i)}return e},n=(s,i)=>{s.adTagParameters={},s.apiKey=null,s.authToken=null,s.format="hls",s.networkCode=null,s.omidAccessModeRules=null,s.streamActivityMonitorId=null,s.ui={custom:null},t(i)&&Object.assign(s,i),s.adTagParameters=e(s.adTagParameters),s.ui=(e=>{if(!t(e))return{custom:null};const s=Object.assign({custom:null},e);return s.custom=t(s.custom)?s.custom:null,s})(s.ui),"string"==typeof s.format&&0!==s.format.length||(s.format="hls")},r=(t,e)=>{n(t,e),t.customAssetKey="string"==typeof t.customAssetKey?t.customAssetKey:""},a=function(){i(this)};a.prototype.addEventListener=function(t,e){if("function"!=typeof e)return;const s=o(t);for(let t=0;t<s.length;t+=1){const i=s[t];this.listeners.has(i)||this.listeners.set(i,new Set);const o=this.listeners.get(i);o&&o.add(e)}},a.prototype.removeEventListener=function(t,e){if("function"!=typeof e)return;const s=o(t);for(let t=0;t<s.length;t+=1){const i=this.listeners.get(s[t]);i&&i.delete(e)}},a.prototype.dispatchEvent=function(t){const e=this.listeners.get(t.type);if(e)for(const s of Array.from(e))try{s(t)}catch(t){logMessage(source,t)}};const c=function(t){n(this,t)};c.StreamFormat={DASH:"dash",HLS:"hls"};const u=function(t){n(this,t),this.assetKey="string"==typeof this.assetKey?this.assetKey:""};Object.setPrototypeOf(u.prototype,c.prototype);const h=function(t){r(this,t)};Object.setPrototypeOf(h.prototype,c.prototype);const l=function(e){r(this,e),this.liveStreamEventId="string"==typeof this.liveStreamEventId?this.liveStreamEventId:"",this.oAuthToken="string"==typeof this.oAuthToken?this.oAuthToken:null,this.projectNumber="string"==typeof this.projectNumber?this.projectNumber:null,this.region="string"==typeof this.region?this.region:null,this.videoStitcherSessionOptions=t(this.videoStitcherSessionOptions)?this.videoStitcherSessionOptions:null};Object.setPrototypeOf(l.prototype,h.prototype);const p=function(e){n(this,e),this.adTagUrl="string"==typeof this.adTagUrl?this.adTagUrl:"",this.contentSourceUrl="string"==typeof this.contentSourceUrl?this.contentSourceUrl:"",this.oAuthToken="string"==typeof this.oAuthToken?this.oAuthToken:null,this.projectNumber="string"==typeof this.projectNumber?this.projectNumber:null,this.region="string"==typeof this.region?this.region:null,this.videoStitcherSessionOptions=t(this.videoStitcherSessionOptions)?this.videoStitcherSessionOptions:null,this.vodConfigId="string"==typeof this.vodConfigId?this.vodConfigId:""};Object.setPrototypeOf(p.prototype,c.prototype);const d=function(t){n(this,t),this.contentSourceId="string"==typeof this.contentSourceId?this.contentSourceId:"",this.videoId="string"==typeof this.videoId?this.videoId:""};Object.setPrototypeOf(d.prototype,c.prototype);const f=function(e){this.adPeriodData=null,this.adProgressData=null,this.cuepoints=[],this.errorMessage=null,this.manifestFormat="HLS",this.streamId=null,this.subtitles=[],this.url="",t(e)&&Object.assign(this,e)},m=function(t,e,s){this.type=t,this.streamData=e||new f,this.ad=s||null};m.Type={AD_BREAK_ENDED:"adBreakEnded",AD_BREAK_STARTED:"adBreakStarted",AD_PERIOD_ENDED:"adPeriodEnded",AD_PERIOD_STARTED:"adPeriodStarted",AD_PROGRESS:"adProgress",CLICK:"click",COMPLETE:"complete",CUEPOINTS_CHANGED:"cuepointsChanged",ERROR:"error",FIRST_QUARTILE:"firstquartile",HIDE_AD_UI:"hideAdUi",LOADED:"loaded",MIDPOINT:"midpoint",PAUSED:"paused",RESUMED:"resumed",SHOW_AD_UI:"showAdUi",SKIPPABLE_STATE_CHANGED:"skippableStateChanged",SKIPPED:"skip",STARTED:"started",STREAM_INITIALIZED:"streamInitialized",THIRD_QUARTILE:"thirdquartile",VIDEO_CLICKED:"videoClicked"},m.prototype.getAd=function(){return this.ad},m.prototype.getStreamData=function(){return this.streamData};const g=function(){this.locale="en"};g.prototype.getLocale=function(){return this.locale},g.prototype.setLocale=function(t){"string"==typeof t&&t.length>0&&(this.locale=t)};const y={EXTERNAL:"external",NOT_SUPPORTED:"notSupported"},S=function(e){this.altText="",this.height=0,this.url="",this.width=0,t(e)&&Object.assign(this,e),this.altText=s(this.altText)||"",this.height="number"==typeof this.height?this.height:0,this.url=s(this.url)||"",this.width="number"==typeof this.width?this.width:0},T=function(e){if(this.clickable=!1,this.required=!1,t(e)&&Object.assign(this,e),this.clickable=Boolean(this.clickable),this.required=Boolean(this.required),Array.isArray(this.imageVariants)){const t=[];for(let e=0;e<this.imageVariants.length;e+=1)t.push(new S(this.imageVariants[e]));this.imageVariants=t}};T.UiImage=S;const E=function(e){this.aboutThisAdSupport=!1,this.clickThroughNavigation=y.NOT_SUPPORTED,this.skippableSupport=!1,t(e)&&Object.assign(this,e),this.aboutThisAdSupport=Boolean(this.aboutThisAdSupport),this.clickThroughNavigation=this.clickThroughNavigation===y.EXTERNAL?y.EXTERNAL:y.NOT_SUPPORTED,this.skippableSupport=Boolean(this.skippableSupport)};E.ClickThroughNavigation=y;const I=new WeakMap,A=function(e){I.set(this,t(e)?e:{})};A.prototype.onClick=function(t,e){const s=I.get(this);s&&"function"==typeof s.onClick&&s.onClick(t,e)},A.prototype.setVisibleElements=function(t){const e=I.get(this);e&&"function"==typeof e.setVisibleElements&&e.setVisibleElements(t)},A.prototype.getConfig=function(){const t=I.get(this);if(!t||"function"!=typeof t.getConfig)return new Map;const e=t.getConfig();return e instanceof Map?e:new Map},A.UiData=T,A.UiKey={ABOUT_THIS_AD_FALLBACK_IMAGE:"aboutThisAdFallbackImage",ABOUT_THIS_AD_ICON:"aboutThisAdIcon",AD_TITLE:"adTitle",ATTRIBUTION:"attribution",AUTHOR_ICON:"authorIcon",AUTHOR_TITLE:"authorTitle",CALL_TO_ACTION:"callToAction",PRE_SKIP:"preSkip",SKIP_BUTTON:"skipButton",VIDEO_OVERLAY:"videoOverlay"},A.UiOptions=E;const v=new WeakMap,O=function(){v.set(this,{})};O.prototype.getFeatureFlags=function(){return(t=>{const e=v.get(t);if(e)return e;const s={};return v.set(t,s),s})(this)},O.prototype.setFeatureFlags=function(t){v.set(this,Object.assign({},t))};const D=t=>{const e=t;return"string"==typeof e.assetKey&&e.assetKey.length>0},b=t=>{const e=t;return"string"==typeof e.networkCode&&e.networkCode.length>0&&"string"==typeof e.customAssetKey&&e.customAssetKey.length>0},k=t=>{const e=t;return"string"==typeof e.contentSourceId&&e.contentSourceId.length>0&&"string"==typeof e.videoId&&e.videoId.length>0},R=t=>{const e=t,s=t,i=t,o=t;return"string"==typeof i.vodConfigId&&i.vodConfigId.length>0?`mock-video-stitcher-vod-${i.vodConfigId}`:"string"==typeof i.contentSourceUrl&&i.contentSourceUrl.length>0?"mock-video-stitcher-vod":"string"==typeof s.liveStreamEventId&&s.liveStreamEventId.length>0?`mock-video-stitcher-live-${s.liveStreamEventId}`:"string"==typeof e.assetKey&&e.assetKey.length>0?`mock-live-${e.assetKey}`:"string"==typeof o.videoId&&o.videoId.length>0?`mock-vod-${o.videoId}`:"mock-stream"},_=t=>"string"==typeof t.format&&"dash"===t.format.toLowerCase()?"DASH":"HLS",w=(e,s,i,o)=>{const n=new f({cuepoints:s.slice(),errorMessage:i,manifestFormat:_(e),streamId:R(e),url:""});return t(o)&&Object.assign(n,o),n},U=(t,e)=>{const s=Object.keys(e.adTagParameters);for(let i=0;i<s.length;i+=1){const o=s[i];t.searchParams.set(o,e.adTagParameters[o])}e.apiKey&&t.searchParams.set("api-key",e.apiKey),e.authToken&&t.searchParams.set("auth-token",e.authToken),e.streamActivityMonitorId&&t.searchParams.set("dai-sam-id",e.streamActivityMonitorId)},P=(t,e)=>{const s=new URL(`${e}/ssai/event/${t.assetKey}/streams`);return U(s,t),s.toString()},C=(t,e)=>{const s=new URL(`${e}/ssai/pods/api/v1/network/${t.networkCode}/custom_asset/${t.customAssetKey}/stream`),i="dash"===t.format.toLowerCase()?"dash":"hls";return U(s,t),s.searchParams.set("manifest-type",i),s.toString()},L=(t,e)=>{const s="dash"===t.format.toLowerCase()?"dash":"hls",i=new URL(`${e}/ondemand/${s}/content/${t.contentSourceId}/vid/${t.videoId}/streams`);return U(i,t),i.toString()},M="https://dai.google.com",K="https://pubads.g.doubleclick.net",N=(t,e,i)=>{const o=s(i.pod_manifest_url)||s(i.podManifestUrl)||"",n=s(i.stream_id)||s(i.streamId),r=s(i.stream_manifest)||s(i.streamUrl)||o||"",a=(t=>s(t.errorMessage)||s(t.error_message))(i),c=r.length>0||null!==n&&n.length>0,u=a||(c?null:"Stream initialization response missing stream URL"),h=s(i.manifest_format)||s(i.manifestFormat)||_(t),l=n||R(t),p=Array.isArray(i.subtitles)?i.subtitles:[];return w(t,e,u,{manifestFormat:h,podManifestUrl:o,pod_manifest_url:o,streamId:l,subtitles:p,url:r})},j=t=>{(t=>{t.adUiElement&&(t.adUiElement.style.display="none")})(t),(t=>{t.videoElement&&!t.videoElement.controls&&(t.videoElement.controls=!0)})(t)},q=function(t,e,s){i(this),this.videoElement=t||null,this.adUiElement=e||null,this.uiSettings=s||new g,this.clickElement=e||null,this.streamData=new f,this.streamMonitor={},this.streamRequest=null,this.cuepoints=[],this.lastMetadata=null,this.lastTimedMetadata=null};Object.setPrototypeOf(q.prototype,a.prototype),q.prototype.contentTimeForStreamTime=function(t){return"number"==typeof t?t:0},q.prototype.destroy=function(){this.reset()},q.prototype.focus=function(){const t=this.clickElement;if(t&&"function"==typeof t.focus)try{t.focus()}catch(t){logMessage(source,t)}},q.prototype.getAdSkippableState=function(){return!0},q.prototype.getStreamData=function(){return this.streamData},q.prototype.loadStreamMetadata=function(){j(this),this.dispatchEvent(new m(m.Type.LOADED,this.streamData))},q.prototype.onTimedMetadata=function(t){this.lastTimedMetadata=t},q.prototype.previousCuePointForStreamTime=function(t){let e=null;for(let s=0;s<this.cuepoints.length;s+=1){const i=this.cuepoints[s];"number"==typeof i.start&&(i.start<=t&&(e=i))}return e},q.prototype.processMetadata=function(t,e,s){this.lastMetadata={data:e,timestamp:s,type:t}},q.prototype.replaceAdTagParameters=function(t){this.streamRequest||(this.streamRequest=new c),this.streamRequest.adTagParameters=e(t)},q.prototype.requestStream=function(e){const s=(e=>{if(e instanceof c)return e;if(t(e)){if("string"==typeof e.liveStreamEventId)return new l(e);if("string"==typeof e.contentSourceUrl||"string"==typeof e.vodConfigId||"string"==typeof e.adTagUrl)return new p(e);if("string"==typeof e.customAssetKey)return new h(e);if("string"==typeof e.assetKey)return new u(e);if("string"==typeof e.contentSourceId||"string"==typeof e.videoId)return new d(e)}return new c})(e);this.streamRequest=s;const i=(t,e)=>{var s;this.streamData=e,(t=>t===m.Type.LOADED||t===m.Type.STREAM_INITIALIZED)(t)&&j(this),s=()=>{this.dispatchEvent(new m(m.Type.STREAM_INITIALIZED,e)),this.dispatchEvent(new m(t,e))},"function"!=typeof requestAnimationFrame?setTimeout(s,0):requestAnimationFrame(s)};if(!(t=>D(t)||b(t)||(t=>{const e=t;return"string"==typeof e.liveStreamEventId&&e.liveStreamEventId.length>0})(t)||(t=>{const e=t,s="string"==typeof e.contentSourceUrl&&e.contentSourceUrl.length>0,i="string"==typeof e.vodConfigId&&e.vodConfigId.length>0;return s||i})(t)||k(t))(s))return void i(m.Type.ERROR,w(s,this.cuepoints,"Missing stream request identifiers"));const o=(t=>b(t)?[C(t,M),C(t,K)]:D(t)?[P(t,M),P(t,K)]:k(t)?[L(t,M),L(t,K)]:[])(s);if(o.length>0){const e=s,n=async s=>{try{const n=await fetch(o[s],{method:"POST",credentials:"include"}),r=await(async e=>{const s=e;if(s&&!1===s.ok)throw new Error(`Stream initialization failed with status ${String(s.status||0)}`);if(s&&"function"==typeof s.json){const e=await s.json();return t(e)?e:{}}return t(e)?e:{}})(n);if(this.streamRequest!==e)return;const a=N(e,this.cuepoints,r),c=a.errorMessage?m.Type.ERROR:m.Type.LOADED;i(c,a)}catch(r){if(this.streamRequest!==e)return;if(s+1<o.length)return void await n(s+1);i(m.Type.ERROR,w(e,this.cuepoints,(e=>t(e)&&"string"==typeof e.message&&e.message.length>0?e.message:"Stream initialization failed")(r)))}};n(0)}else i(m.Type.LOADED,w(s,this.cuepoints,null))},q.prototype.reset=function(){this.cuepoints=[],this.lastMetadata=null,this.lastTimedMetadata=null,this.streamData=new f,this.streamRequest=null},q.prototype.setClickElement=function(t){this.adUiElement||(this.clickElement=t)},q.prototype.streamTimeForContentTime=function(t){return"number"==typeof t?t:0};const B={customUi:{UiOptions:function(e){this.aboutThisAdSupport=!1,this.skippableSupport=!1,t(e)&&Object.assign(this,e),this.aboutThisAdSupport=Boolean(this.aboutThisAdSupport),this.skippableSupport=Boolean(this.skippableSupport)}},DaiSdkSettings:new O,LiveStreamRequest:u,PodStreamRequest:h,StreamData:f,StreamEvent:m,StreamManager:q,StreamRequest:c,ui:A,UiSettings:g,VideoStitcherLiveStreamRequest:l,VideoStitcherVodStreamRequest:p,VODStreamRequest:d},F=window,H=t(F.google)?F.google:{};t(F.google)||(F.google=H);const V=t(H.ima)?H.ima:{};H.ima=V;const $=t(V.dai)?V.dai:{};V.dai=$;const G=t($.api)?$.api:{};$.api=G,Object.assign(G,B)}GoogleIma3Dai();
 sbstatesman.com##div[id^="sbsta-"]
 scalemates.com##.bwx.hrspb
 scamdoc.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
@@ -83443,6 +83441,8 @@ vivosoccer.xyz,harimanga.com,dlhd.*,topcartoons.tv,hdtoday.tv,watchcartoononline
 vivud.com##.in_stream_banner
 vivud.com##.inplayer_banners
 vivud.com##.player-aside-banners
+vix.com,play.fyi.tv,play.history.com,play.aetv.com#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3_dai.js')
+vix.com,sbs.com.au,10.com.au,news4jax.com,sbtnews.sbt.com.br,paramountplus.com,play.fyi.tv,play.history.com,play.aetv.com#%#function GoogleIma3Dai(){const t=t=>"object"==typeof t&&null!==t,e=e=>{if(!t(e))return{};const s={},i=Object.keys(e);for(let t=0;t<i.length;t+=1){const o=i[t];s[o]=String(e[o])}return s},s=t=>"string"==typeof t&&t.length>0?t:null,i=t=>{t.listeners=new Map},o=t=>{if("string"==typeof t)return[t];if(!Array.isArray(t))return[];const e=[];for(let s=0;s<t.length;s+=1){const i=t[s];"string"==typeof i&&e.push(i)}return e},n=(s,i)=>{s.adTagParameters={},s.apiKey=null,s.authToken=null,s.format="hls",s.networkCode=null,s.omidAccessModeRules=null,s.streamActivityMonitorId=null,s.ui={custom:null},t(i)&&Object.assign(s,i),s.adTagParameters=e(s.adTagParameters),s.ui=(e=>{if(!t(e))return{custom:null};const s=Object.assign({custom:null},e);return s.custom=t(s.custom)?s.custom:null,s})(s.ui),"string"==typeof s.format&&0!==s.format.length||(s.format="hls")},r=(t,e)=>{n(t,e),t.customAssetKey="string"==typeof t.customAssetKey?t.customAssetKey:""},a=function(){i(this)};a.prototype.addEventListener=function(t,e){if("function"!=typeof e)return;const s=o(t);for(let t=0;t<s.length;t+=1){const i=s[t];this.listeners.has(i)||this.listeners.set(i,new Set);const o=this.listeners.get(i);o&&o.add(e)}},a.prototype.removeEventListener=function(t,e){if("function"!=typeof e)return;const s=o(t);for(let t=0;t<s.length;t+=1){const i=this.listeners.get(s[t]);i&&i.delete(e)}},a.prototype.dispatchEvent=function(t){const e=this.listeners.get(t.type);if(e)for(const s of Array.from(e))try{s(t)}catch(t){logMessage(source,t)}};const c=function(t){n(this,t)};c.StreamFormat={DASH:"dash",HLS:"hls"};const u=function(t){n(this,t),this.assetKey="string"==typeof this.assetKey?this.assetKey:""};Object.setPrototypeOf(u.prototype,c.prototype);const h=function(t){r(this,t)};Object.setPrototypeOf(h.prototype,c.prototype);const l=function(e){r(this,e),this.liveStreamEventId="string"==typeof this.liveStreamEventId?this.liveStreamEventId:"",this.oAuthToken="string"==typeof this.oAuthToken?this.oAuthToken:null,this.projectNumber="string"==typeof this.projectNumber?this.projectNumber:null,this.region="string"==typeof this.region?this.region:null,this.videoStitcherSessionOptions=t(this.videoStitcherSessionOptions)?this.videoStitcherSessionOptions:null};Object.setPrototypeOf(l.prototype,h.prototype);const p=function(e){n(this,e),this.adTagUrl="string"==typeof this.adTagUrl?this.adTagUrl:"",this.contentSourceUrl="string"==typeof this.contentSourceUrl?this.contentSourceUrl:"",this.oAuthToken="string"==typeof this.oAuthToken?this.oAuthToken:null,this.projectNumber="string"==typeof this.projectNumber?this.projectNumber:null,this.region="string"==typeof this.region?this.region:null,this.videoStitcherSessionOptions=t(this.videoStitcherSessionOptions)?this.videoStitcherSessionOptions:null,this.vodConfigId="string"==typeof this.vodConfigId?this.vodConfigId:""};Object.setPrototypeOf(p.prototype,c.prototype);const d=function(t){n(this,t),this.contentSourceId="string"==typeof this.contentSourceId?this.contentSourceId:"",this.videoId="string"==typeof this.videoId?this.videoId:""};Object.setPrototypeOf(d.prototype,c.prototype);const f=function(e){this.adPeriodData=null,this.adProgressData=null,this.cuepoints=[],this.errorMessage=null,this.manifestFormat="HLS",this.streamId=null,this.subtitles=[],this.url="",t(e)&&Object.assign(this,e)},m=function(t,e,s){this.type=t,this.streamData=e||new f,this.ad=s||null};m.Type={AD_BREAK_ENDED:"adBreakEnded",AD_BREAK_STARTED:"adBreakStarted",AD_PERIOD_ENDED:"adPeriodEnded",AD_PERIOD_STARTED:"adPeriodStarted",AD_PROGRESS:"adProgress",CLICK:"click",COMPLETE:"complete",CUEPOINTS_CHANGED:"cuepointsChanged",ERROR:"error",FIRST_QUARTILE:"firstquartile",HIDE_AD_UI:"hideAdUi",LOADED:"loaded",MIDPOINT:"midpoint",PAUSED:"paused",RESUMED:"resumed",SHOW_AD_UI:"showAdUi",SKIPPABLE_STATE_CHANGED:"skippableStateChanged",SKIPPED:"skip",STARTED:"started",STREAM_INITIALIZED:"streamInitialized",THIRD_QUARTILE:"thirdquartile",VIDEO_CLICKED:"videoClicked"},m.prototype.getAd=function(){return this.ad},m.prototype.getStreamData=function(){return this.streamData};const g=function(){this.locale="en"};g.prototype.getLocale=function(){return this.locale},g.prototype.setLocale=function(t){"string"==typeof t&&t.length>0&&(this.locale=t)};const y={EXTERNAL:"external",NOT_SUPPORTED:"notSupported"},S=function(e){this.altText="",this.height=0,this.url="",this.width=0,t(e)&&Object.assign(this,e),this.altText=s(this.altText)||"",this.height="number"==typeof this.height?this.height:0,this.url=s(this.url)||"",this.width="number"==typeof this.width?this.width:0},T=function(e){if(this.clickable=!1,this.required=!1,t(e)&&Object.assign(this,e),this.clickable=Boolean(this.clickable),this.required=Boolean(this.required),Array.isArray(this.imageVariants)){const t=[];for(let e=0;e<this.imageVariants.length;e+=1)t.push(new S(this.imageVariants[e]));this.imageVariants=t}};T.UiImage=S;const E=function(e){this.aboutThisAdSupport=!1,this.clickThroughNavigation=y.NOT_SUPPORTED,this.skippableSupport=!1,t(e)&&Object.assign(this,e),this.aboutThisAdSupport=Boolean(this.aboutThisAdSupport),this.clickThroughNavigation=this.clickThroughNavigation===y.EXTERNAL?y.EXTERNAL:y.NOT_SUPPORTED,this.skippableSupport=Boolean(this.skippableSupport)};E.ClickThroughNavigation=y;const I=new WeakMap,A=function(e){I.set(this,t(e)?e:{})};A.prototype.onClick=function(t,e){const s=I.get(this);s&&"function"==typeof s.onClick&&s.onClick(t,e)},A.prototype.setVisibleElements=function(t){const e=I.get(this);e&&"function"==typeof e.setVisibleElements&&e.setVisibleElements(t)},A.prototype.getConfig=function(){const t=I.get(this);if(!t||"function"!=typeof t.getConfig)return new Map;const e=t.getConfig();return e instanceof Map?e:new Map},A.UiData=T,A.UiKey={ABOUT_THIS_AD_FALLBACK_IMAGE:"aboutThisAdFallbackImage",ABOUT_THIS_AD_ICON:"aboutThisAdIcon",AD_TITLE:"adTitle",ATTRIBUTION:"attribution",AUTHOR_ICON:"authorIcon",AUTHOR_TITLE:"authorTitle",CALL_TO_ACTION:"callToAction",PRE_SKIP:"preSkip",SKIP_BUTTON:"skipButton",VIDEO_OVERLAY:"videoOverlay"},A.UiOptions=E;const v=new WeakMap,O=function(){v.set(this,{})};O.prototype.getFeatureFlags=function(){return(t=>{const e=v.get(t);if(e)return e;const s={};return v.set(t,s),s})(this)},O.prototype.setFeatureFlags=function(t){v.set(this,Object.assign({},t))};const D=t=>{const e=t;return"string"==typeof e.assetKey&&e.assetKey.length>0},b=t=>{const e=t;return"string"==typeof e.networkCode&&e.networkCode.length>0&&"string"==typeof e.customAssetKey&&e.customAssetKey.length>0},k=t=>{const e=t;return"string"==typeof e.contentSourceId&&e.contentSourceId.length>0&&"string"==typeof e.videoId&&e.videoId.length>0},R=t=>{const e=t,s=t,i=t,o=t;return"string"==typeof i.vodConfigId&&i.vodConfigId.length>0?`mock-video-stitcher-vod-${i.vodConfigId}`:"string"==typeof i.contentSourceUrl&&i.contentSourceUrl.length>0?"mock-video-stitcher-vod":"string"==typeof s.liveStreamEventId&&s.liveStreamEventId.length>0?`mock-video-stitcher-live-${s.liveStreamEventId}`:"string"==typeof e.assetKey&&e.assetKey.length>0?`mock-live-${e.assetKey}`:"string"==typeof o.videoId&&o.videoId.length>0?`mock-vod-${o.videoId}`:"mock-stream"},_=t=>"string"==typeof t.format&&"dash"===t.format.toLowerCase()?"DASH":"HLS",w=(e,s,i,o)=>{const n=new f({cuepoints:s.slice(),errorMessage:i,manifestFormat:_(e),streamId:R(e),url:""});return t(o)&&Object.assign(n,o),n},U=(t,e)=>{const s=Object.keys(e.adTagParameters);for(let i=0;i<s.length;i+=1){const o=s[i];t.searchParams.set(o,e.adTagParameters[o])}e.apiKey&&t.searchParams.set("api-key",e.apiKey),e.authToken&&t.searchParams.set("auth-token",e.authToken),e.streamActivityMonitorId&&t.searchParams.set("dai-sam-id",e.streamActivityMonitorId)},P=(t,e)=>{const s=new URL(`${e}/ssai/event/${t.assetKey}/streams`);return U(s,t),s.toString()},C=(t,e)=>{const s=new URL(`${e}/ssai/pods/api/v1/network/${t.networkCode}/custom_asset/${t.customAssetKey}/stream`),i="dash"===t.format.toLowerCase()?"dash":"hls";return U(s,t),s.searchParams.set("manifest-type",i),s.toString()},L=(t,e)=>{const s="dash"===t.format.toLowerCase()?"dash":"hls",i=new URL(`${e}/ondemand/${s}/content/${t.contentSourceId}/vid/${t.videoId}/streams`);return U(i,t),i.toString()},M="https://dai.google.com",K="https://pubads.g.doubleclick.net",N=(t,e,i)=>{const o=s(i.pod_manifest_url)||s(i.podManifestUrl)||"",n=s(i.stream_id)||s(i.streamId),r=s(i.stream_manifest)||s(i.streamUrl)||o||"",a=(t=>s(t.errorMessage)||s(t.error_message))(i),c=r.length>0||null!==n&&n.length>0,u=a||(c?null:"Stream initialization response missing stream URL"),h=s(i.manifest_format)||s(i.manifestFormat)||_(t),l=n||R(t),p=Array.isArray(i.subtitles)?i.subtitles:[];return w(t,e,u,{manifestFormat:h,podManifestUrl:o,pod_manifest_url:o,streamId:l,subtitles:p,url:r})},j=t=>{(t=>{t.adUiElement&&(t.adUiElement.style.display="none")})(t),(t=>{t.videoElement&&!t.videoElement.controls&&(t.videoElement.controls=!0)})(t)},q=function(t,e,s){i(this),this.videoElement=t||null,this.adUiElement=e||null,this.uiSettings=s||new g,this.clickElement=e||null,this.streamData=new f,this.streamMonitor={},this.streamRequest=null,this.cuepoints=[],this.lastMetadata=null,this.lastTimedMetadata=null};Object.setPrototypeOf(q.prototype,a.prototype),q.prototype.contentTimeForStreamTime=function(t){return"number"==typeof t?t:0},q.prototype.destroy=function(){this.reset()},q.prototype.focus=function(){const t=this.clickElement;if(t&&"function"==typeof t.focus)try{t.focus()}catch(t){logMessage(source,t)}},q.prototype.getAdSkippableState=function(){return!0},q.prototype.getStreamData=function(){return this.streamData},q.prototype.loadStreamMetadata=function(){j(this),this.dispatchEvent(new m(m.Type.LOADED,this.streamData))},q.prototype.onTimedMetadata=function(t){this.lastTimedMetadata=t},q.prototype.previousCuePointForStreamTime=function(t){let e=null;for(let s=0;s<this.cuepoints.length;s+=1){const i=this.cuepoints[s];"number"==typeof i.start&&(i.start<=t&&(e=i))}return e},q.prototype.processMetadata=function(t,e,s){this.lastMetadata={data:e,timestamp:s,type:t}},q.prototype.replaceAdTagParameters=function(t){this.streamRequest||(this.streamRequest=new c),this.streamRequest.adTagParameters=e(t)},q.prototype.requestStream=function(e){const s=(e=>{if(e instanceof c)return e;if(t(e)){if("string"==typeof e.liveStreamEventId)return new l(e);if("string"==typeof e.contentSourceUrl||"string"==typeof e.vodConfigId||"string"==typeof e.adTagUrl)return new p(e);if("string"==typeof e.customAssetKey)return new h(e);if("string"==typeof e.assetKey)return new u(e);if("string"==typeof e.contentSourceId||"string"==typeof e.videoId)return new d(e)}return new c})(e);this.streamRequest=s;const i=(t,e)=>{var s;this.streamData=e,(t=>t===m.Type.LOADED||t===m.Type.STREAM_INITIALIZED)(t)&&j(this),s=()=>{this.dispatchEvent(new m(m.Type.STREAM_INITIALIZED,e)),this.dispatchEvent(new m(t,e))},"function"!=typeof requestAnimationFrame?setTimeout(s,0):requestAnimationFrame(s)};if(!(t=>D(t)||b(t)||(t=>{const e=t;return"string"==typeof e.liveStreamEventId&&e.liveStreamEventId.length>0})(t)||(t=>{const e=t,s="string"==typeof e.contentSourceUrl&&e.contentSourceUrl.length>0,i="string"==typeof e.vodConfigId&&e.vodConfigId.length>0;return s||i})(t)||k(t))(s))return void i(m.Type.ERROR,w(s,this.cuepoints,"Missing stream request identifiers"));const o=(t=>b(t)?[C(t,M),C(t,K)]:D(t)?[P(t,M),P(t,K)]:k(t)?[L(t,M),L(t,K)]:[])(s);if(o.length>0){const e=s,n=async s=>{try{const n=await fetch(o[s],{method:"POST",credentials:"include"}),r=await(async e=>{const s=e;if(s&&!1===s.ok)throw new Error(`Stream initialization failed with status ${String(s.status||0)}`);if(s&&"function"==typeof s.json){const e=await s.json();return t(e)?e:{}}return t(e)?e:{}})(n);if(this.streamRequest!==e)return;const a=N(e,this.cuepoints,r),c=a.errorMessage?m.Type.ERROR:m.Type.LOADED;i(c,a)}catch(r){if(this.streamRequest!==e)return;if(s+1<o.length)return void await n(s+1);i(m.Type.ERROR,w(e,this.cuepoints,(e=>t(e)&&"string"==typeof e.message&&e.message.length>0?e.message:"Stream initialization failed")(r)))}};n(0)}else i(m.Type.LOADED,w(s,this.cuepoints,null))},q.prototype.reset=function(){this.cuepoints=[],this.lastMetadata=null,this.lastTimedMetadata=null,this.streamData=new f,this.streamRequest=null},q.prototype.setClickElement=function(t){this.adUiElement||(this.clickElement=t)},q.prototype.streamTimeForContentTime=function(t){return"number"==typeof t?t:0};const B={customUi:{UiOptions:function(e){this.aboutThisAdSupport=!1,this.skippableSupport=!1,t(e)&&Object.assign(this,e),this.aboutThisAdSupport=Boolean(this.aboutThisAdSupport),this.skippableSupport=Boolean(this.skippableSupport)}},DaiSdkSettings:new O,LiveStreamRequest:u,PodStreamRequest:h,StreamData:f,StreamEvent:m,StreamManager:q,StreamRequest:c,ui:A,UiSettings:g,VideoStitcherLiveStreamRequest:l,VideoStitcherVodStreamRequest:p,VODStreamRequest:d},F=window,H=t(F.google)?F.google:{};t(F.google)||(F.google=H);const V=t(H.ima)?H.ima:{};H.ima=V;const $=t(V.dai)?V.dai:{};V.dai=$;const G=t($.api)?$.api:{};$.api=G,Object.assign(G,B)}GoogleIma3Dai();
 vixenless.com,bestialporn.com,bestialitysexanimals.com,mynakedwife.video,bestialitytaboo.tv,mujeresdesnudas.club#%#//scriptlet("abort-current-inline-script", "$", "clickObject")
 vizcloud.*,mcloud.to,vizcloud2.*,vidstreamz.online###player-wrapper > #player ~ div[style^="position: absolute;"]
 vizcloud.*,mcloud.to,vizcloud2.*,vidstreamz.online##.xad-wrapper
@@ -84560,6 +84560,7 @@ wetransfer.com##.wallpaper
 wetter.com#%#//scriptlet('set-constant', 'wcomBlock', 'noopFunc')
 wetv.vip###google-ads-player
 wetv.vip#%#//scriptlet("adjust-setTimeout", "onAdsCompleted", "5000", "0.02")
+weworkremotely.com##.feature--ad
 wezhicms.com##.activity
 wezhicms.com#?#.card-main:-abp-has(.waimai-item-img)
 wezhicms.com#?#.card-main:has(.waimai-item-img)
@@ -87852,6 +87853,7 @@ zzzyk.com###Tinfo
 ||067f87da09.com^
 ||0684516d67.9c786ff5cd.com^
 ||06901f91fd.b2f5a87e42.com^
+||069667261e.com^
 ||06aa7d6d80.com^
 ||06b36b4508.5813e74b18.com^
 ||06cp8ypn8j.com^
@@ -87901,6 +87903,7 @@ zzzyk.com###Tinfo
 ||0a1016a839.11e4c00a9f.com^
 ||0a186254d0.cf25ba90cc.com^
 ||0a2bdfc424.0e176a58eb.com^
+||0a57f6bbfd.com^
 ||0a66kw9r8.com^
 ||0a8de3ea12.com^
 ||0af2a962b0102942d9a7df351b20be55.com^
@@ -88249,6 +88252,7 @@ zzzyk.com###Tinfo
 ||123-stream.org^$document
 ||123-stream.org^$popup
 ||123.sogou.com/discover/?
+||1230165f1b.com^
 ||1233130091.com^
 ||123456.asia^
 ||123av.*/assets/ad/
@@ -88474,6 +88478,7 @@ zzzyk.com###Tinfo
 ||16ao.mathon.fr^
 ||16c1717207.com^
 ||16ca8cd3e5.com^
+||16hydrtix.com^
 ||16i6nuuc2ej.koelewijn.nl^
 ||16iis7i2p.de^
 ||16m.cc^$third-party
@@ -88809,6 +88814,7 @@ zzzyk.com###Tinfo
 ||1i8c0f11.de^
 ||1igare0jn.de^
 ||1inplatforms.net^
+||1instances.com^
 ||1itot7tm.de^
 ||1iuh5l.com^
 ||1j2n061x3td.www.digi.no^
@@ -88860,6 +88866,7 @@ zzzyk.com###Tinfo
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1odi7j43c.de^
+||1on56nkjbu3gx432gz9.cfd^
 ||1or8z2l9xx8cmioeg79y7iqou64xi5quitbcm.rest^
 ||1osb.com^
 ||1owr1hr7nf3j5c6i2te.rest^
@@ -89049,11 +89056,13 @@ zzzyk.com###Tinfo
 ||203.195.121.74^$popup
 ||203783e0f1.43201617eb.com^
 ||203a382a60.403dee4b16.com^
+||2048executors.com^
 ||2048hd1.com/js/tc.js
 ||2048hydreo.net^
 ||204st.us^$third-party
 ||205.209.138.102^
 ||2052.flash2-http.qq.com^
+||20590def33.com^
 ||206ads.com^
 ||206solutions.com^$third-party
 ||20bd.pandasuite.io^
@@ -89092,6 +89101,7 @@ zzzyk.com###Tinfo
 ||218emo1t.de^
 ||21a3ff363a.com^
 ||21b95312a1.com^
+||21c69b70bc.com^
 ||21cd0ebcd4.1f3912cb04.com^
 ||21cfhm0s1.top^
 ||21e18b62f2.4a41fff8a6.com^
@@ -89454,6 +89464,7 @@ zzzyk.com###Tinfo
 ||2c4b614013.com^
 ||2c4d3459e6.d4dc5a447c.com^
 ||2c4rrl8pe.de^
+||2c8eb505eb.com^
 ||2cb8673686.134f65414c.com^
 ||2ccc.com/images/WebXone.gif
 ||2ccc.com/images/aobi.gif
@@ -89624,6 +89635,7 @@ zzzyk.com###Tinfo
 ||2tty.overstappen.nl^
 ||2u1h56851n.top^
 ||2u1oucjq9cork3.cfd^
+||2u1z7qmjvy1covuwg2rxkj3.cfd^
 ||2u774xk5ywn5vt2hc745.rest^
 ||2u7w.txmzgt912ujx47rkqu2g352h1.cfd^
 ||2vcb9onxjm.com^
@@ -90059,6 +90071,7 @@ zzzyk.com###Tinfo
 ||33across.com^$third-party
 ||33apk.com^
 ||33bbaf45e4.f9fd639740.com^
+||33cd95e164.com^
 ||33dav.com/static/js/banner.js
 ||33dav.com/static/js/bottom.js
 ||33e575cb57.a02e31b105.com^
@@ -90069,6 +90082,7 @@ zzzyk.com###Tinfo
 ||33img.com^$domain=18board.com|18p2p.com
 ||33kw1wc58.top^
 ||33serve.bussyhunter.com^
+||33services.net^
 ||33shu.net/js/game
 ||33w8tdyelw.com^
 ||34-new-lambda.net^
@@ -90511,6 +90525,7 @@ zzzyk.com###Tinfo
 ||3961146.notify6.com^
 ||3961386.notify6.com^
 ||3968040.notify6.com^
+||396d8aaa17.com^
 ||3973252.notify6.com^
 ||3975710.notify6.com^
 ||39762581b7.com^
@@ -90523,6 +90538,7 @@ zzzyk.com###Tinfo
 ||3990818.notify6.com^
 ||3995186.notify6.com^
 ||3999f86b91.com^
+||399a0014f6.com^
 ||39e6p9p7.de^
 ||39grbc.jackbarber.co.uk^
 ||39jbw3bog7xw3qmhkyno.rest^
@@ -90711,6 +90727,7 @@ zzzyk.com###Tinfo
 ||3u3ymbqj.xyz^
 ||3u9v4r9u5ukvjujecetyh6.rest^
 ||3uhg1kxxf4x88z.rest^
+||3uv4e4ozrekc56zx1jjwfbugpq1i275.cfd^
 ||3ve8tk6lpz1k5fz4z.cfd^
 ||3vetz.com^
 ||3vetz.com^$document
@@ -91827,6 +91844,7 @@ zzzyk.com###Tinfo
 ||613f15a070.com^
 ||614514.com^
 ||61847b1398.com^
+||618856e0bb.com^
 ||61b596802a.bbcc3e012c.com^
 ||61d7a302a1.com^
 ||61edd03ae1.com^
@@ -92046,6 +92064,7 @@ zzzyk.com###Tinfo
 ||6d90fc608a.f39ff3accb.com^
 ||6daf41852f.4ba48a7822.com^
 ||6dbc7ad876.com^
+||6dca8ddc4d.com^
 ||6dp0i7.ru^
 ||6drq9rfn.xyz^
 ||6e403ef694.c501fc4637.com^
@@ -92425,6 +92444,7 @@ zzzyk.com###Tinfo
 ||7d6e366acd.com^
 ||7d77f23c90.com^
 ||7d7eab9082.com^
+||7d909fb540.com^
 ||7d93f9d2f5.com^
 ||7d9e636083.5308675c79.com^
 ||7da1aovz6.com^
@@ -92454,6 +92474,7 @@ zzzyk.com###Tinfo
 ||7f89d90c6f.com^
 ||7fc3407df0.3b8e4eb36d.com^
 ||7ff01aa709.516c0edfbb.com^
+||7ff9dd031a.com^
 ||7fhginl5cekq8ykr5hc9bn26xwb.cfd^
 ||7fkm2r4pzi.com^
 ||7focry12ylhr5k5rv.cfd^
@@ -92684,6 +92705,7 @@ zzzyk.com###Tinfo
 ||86uk.com/uploads/*0x
 ||86uk.com^$subdocument
 ||8707c7e689.dec0c1a14f.com^
+||870input.net^
 ||874547.men^
 ||8752d657fd.a3a706a0ae.com^
 ||875ae5699d.8b543b5074.com^
@@ -92748,12 +92770,14 @@ zzzyk.com###Tinfo
 ||89ga0evbha.com^
 ||89sa.com^
 ||89sa.com^$popup
+||89terraium.net^
 ||8a41766c30.com^
 ||8a4ca59e89.9eb0066c79.com^
 ||8a54c826fe.660d588959.com^
 ||8a6cc3f77f.com^
 ||8acd6b63f9.com^
 ||8aef6f3c8b.com^
+||8af0229830.com^
 ||8afb98c0d8.com^
 ||8b023d788d.com^
 ||8b0e465f3e.com^
@@ -93091,6 +93115,7 @@ zzzyk.com###Tinfo
 ||9786.pandasuite.io^
 ||978eed5ecd.bb63136099.com^
 ||97ce98c219.com^
+||97f477047f.com^
 ||97inservices.net^
 ||97nexoleo.net^
 ||97vk351gi.com^
@@ -93822,6 +93847,7 @@ zzzyk.com###Tinfo
 ||a00s.net^
 ||a011c1f8f2.dcff90fa75.com^
 ||a013.com^$third-party
+||a02e31b105.com^
 ||a05fda840b.cd6b9b5aa4.com^
 ||a065b8f217.com^
 ||a06c9a4dd7.com^
@@ -96160,6 +96186,7 @@ zzzyk.com###Tinfo
 ||a506ea1612.d5fb078bf9.com^
 ||a51f200d7e.com^
 ||a51wzxssu.com^
+||a54a8ff97b.com^
 ||a568e472d6.com^
 ||a5ddb5cd30.com^
 ||a5wlr2yplf.com^
@@ -96572,6 +96599,7 @@ zzzyk.com###Tinfo
 ||a8aspconv.xn--ocn-ws1e.jp^
 ||a8atcomsme.mellife.jp^
 ||a8bea9eb5d.com^
+||a8ca394de0.com^
 ||a8clic.alcosystem.co.jp^
 ||a8click.daini2.co.jp^
 ||a8click.you-up.com^
@@ -98543,6 +98571,7 @@ zzzyk.com###Tinfo
 ||acidickoshare.qpon^
 ||acidityrappist.qpon^
 ||acidmercy.com^
+||acidnjdayblqz.com^
 ||acidprolific.com^
 ||acidylseseliperries.qpon^
 ||acint.net^$third-party
@@ -102663,6 +102692,7 @@ zzzyk.com###Tinfo
 ||agplaxfa.in^
 ||agqoshfujku.com^
 ||agqrzufnxmmyu.site^
+||agrahtarre.cfd^
 ||agrariancapable.com^
 ||agrariansabletogether.com^
 ||agreeablebeggarlyvarieties.com^
@@ -102693,6 +102723,7 @@ zzzyk.com###Tinfo
 ||aguisereasonfatling.cyou^
 ||aguo.com^$third-party
 ||agurgeed.net^
+||agvbugbix.com^
 ||agvcrtyuswgmy.online^
 ||agvinfo.kollmorgen.com^
 ||agwagnfaqtc.in^
@@ -105736,6 +105767,7 @@ zzzyk.com###Tinfo
 ||ao.tolydigital.net^
 ||ao2doihore.com^
 ||ao5yygeilh.com^
+||aoakpnxffvpnb.online^
 ||aoalmfwinbsstec23.com^
 ||aocaxppjxvhfj.online^
 ||aocdqwzslgqlo.site^
@@ -105791,6 +105823,7 @@ zzzyk.com###Tinfo
 ||aordeficitspigots.cfd^
 ||aorms.com^$third-party
 ||aorpum.com^$third-party
+||aorsyjiwkunmv.space^
 ||aortallulavim.cyou^
 ||aorvgrrzkjras.store^
 ||aoshi.com/rbc.jpg
@@ -105840,6 +105873,7 @@ zzzyk.com###Tinfo
 ||apartmenttherapy.com/jAYekY18/init.js
 ||apasslone.cyou^
 ||apatheticformingalbeit.com^
+||apathicduenas.cyou^
 ||apathyfarsakhcarven.cyou^
 ||apauzauxauls.net^
 ||apaxqcchnsiil.space^
@@ -107760,6 +107794,7 @@ zzzyk.com###Tinfo
 ||arincol.arin-innovation.com^
 ||ariotgribble.com^
 ||arisglobal.actonservice.com^
+||arithmetic48.top^
 ||arithmeticrobust.com^
 ||arithpouted.com^
 ||arivatecs.fumblingvacation.pro^
@@ -109913,6 +109948,7 @@ zzzyk.com###Tinfo
 ||b7yy.com/ad/
 ||b7zxkmxqh6bge9.rest^
 ||b8033bc28b.05f3b6b187.com^
+||b8036a31fa.com^
 ||b82q168jgj.com^
 ||b8442ed1e4.9365e2dd1f.com^
 ||b851eqrlmvcqyyou1jqcexbn33cxbzb9xg67.rest^
@@ -110283,6 +110319,7 @@ zzzyk.com###Tinfo
 ||balphyra.com^
 ||balpianismivan.qpon^
 ||balrcizkptdwh.space^
+||balsacambuca.cyou^
 ||balsam18.com^
 ||balteusngapi.cfd^
 ||balteusrail.qpon^
@@ -110492,6 +110529,7 @@ zzzyk.com###Tinfo
 ||bantaculei.cfd^
 ||bantamsonefold.com^
 ||banyaikipe.top^$popup
+||banyanlosang.qpon^
 ||banzhu*.com/js/cdn.
 ||banzhu*.com/js/cdn.js$~third-party
 ||banzhu*.com/js/html
@@ -110674,6 +110712,7 @@ zzzyk.com###Tinfo
 ||bawosdwu.com^
 ||bawqpynu.com^
 ||baxterbouchee.cfd^
+||bayalunlatch.qpon^
 ||bayarddaymarefotui.cyou^
 ||baycjars.com^
 ||bayctrk.com^
@@ -110757,6 +110796,7 @@ zzzyk.com###Tinfo
 ||bbpaakofsfydc.online^
 ||bbpic.ru/js/plears.js
 ||bbppwgyzxftcx.online^
+||bbqlbbnokswsaud.com^
 ||bbrav96ax.com^
 ||bbrdbr.com^
 ||bbrdbr.com^$popup
@@ -111789,6 +111829,7 @@ zzzyk.com###Tinfo
 ||bfntkv.icon.co.cr^
 ||bfocuqeona.com^
 ||bfoleyinteractive.com^$third-party
+||bfoprtc-a.online^
 ||bfp.capitalone.com^
 ||bfpartners.click^
 ||bfpartners.click^$popup
@@ -112775,6 +112816,7 @@ zzzyk.com###Tinfo
 ||blotchinvestigation.com^
 ||blotecardthumb.com^
 ||blousekudo.com^
+||blowenstork.qpon^
 ||blowersdialer.com^
 ||blowflymincesstichos.qpon^
 ||blowgunbumpoff.cyou^
@@ -113215,6 +113257,8 @@ zzzyk.com###Tinfo
 ||bonosbevvy.com^
 ||bonprix.*/ajax/landmarks/
 ||bonprix.*/ajax/marketing-parameters/
+||bonsaiaccisefoaming.cyou^
+||bonserdalteen.cfd^
 ||bonsoirforlorn.cfd^
 ||bontent.powvideo.net^
 ||bontent.powvideo.net^$popup
@@ -113583,6 +113627,7 @@ zzzyk.com###Tinfo
 ||bqgwxqoqjqvbz.online^
 ||bqhjimuokpvg.com^
 ||bqhkix.mosmexa.ru^
+||bqiacikyzzero.online^
 ||bqiapp.com/api/config/ad?
 ||bqifheyrsbgqa.site^
 ||bqjmeikd.com^
@@ -113896,6 +113941,7 @@ zzzyk.com###Tinfo
 ||breaktime.com.tw^$third-party
 ||brealtime.com^
 ||brealtime.com^$third-party
+||breardssercom.cfd^
 ||breastfeedingdelightedtease.com^
 ||breastfeedingminutepond.com^
 ||breasycarrental.eccocar.com^
@@ -114124,6 +114170,7 @@ zzzyk.com###Tinfo
 ||brotherinlawbarbedspend.com^
 ||brothersincash.com^$third-party
 ||broughtcontract.com^
+||broughtkittock.qpon^
 ||browbeatcaramelstole.com^
 ||browdcelaeno.cfd^
 ||brown-cry.com^
@@ -114532,6 +114579,7 @@ zzzyk.com###Tinfo
 ||bugsfighter.com/wp-content/uploads/2020/07/malwarebytes-banner.jpg
 ||bugsnag.com^$third-party
 ||bugsnag.shopbop.amazon.dev^
+||buhjusvf.in^
 ||buhvjv.icu^
 ||buidpbvqkx.com^
 ||buiimifrliflc.website^
@@ -114660,6 +114708,7 @@ zzzyk.com###Tinfo
 ||buntypuddee.qpon^
 ||bunxkmspqjc.com^
 ||bunyancibaria.qpon^
+||bunyancolob.qpon^
 ||buonasera.openapp.link^
 ||buondua.com/hit/
 ||buondua.com/templatesygfo76jp36enw15_/
@@ -114929,6 +114978,7 @@ zzzyk.com###Tinfo
 ||bwghuhtlt.com^
 ||bwinpartypartners.com^$third-party
 ||bwj4.hrhibiza.com^
+||bwkcomucfkfpgl.com^
 ||bwkfevvdrwevl.website^
 ||bwknpebhbfyvv.online^
 ||bwkpkx.projectxparis.com^
@@ -115548,6 +115598,7 @@ zzzyk.com###Tinfo
 ||cafe24.com/weblog.js
 ||cafecairo.de^
 ||cafemedia.com/topics/clickstream-event
+||cafenetwolfen.cyou^
 ||cafenews.pl/mpl/static/static.js?
 ||cafeqnugevtpm.website^
 ||cafewarriors.com^
@@ -117572,6 +117623,7 @@ zzzyk.com###Tinfo
 ||cf96c6e70f.d6f9e3ab62.com^
 ||cfa-js.cafe24.com^
 ||cfa.fidelity.com^
+||cfabf1ef11.com^
 ||cfaexam.quantresear.ch^
 ||cfapi.upstackdata.io^
 ||cfarvjcutttkn.website^
@@ -121573,6 +121625,7 @@ zzzyk.com###Tinfo
 ||corklive.ie/js/bannerInterstitial.js
 ||corksadly.com^
 ||cormelsseity.com^
+||cormgixcvnrjw.online^
 ||cormilk.fumblingvacation.pro^
 ||cormoidlowlybedell.cfd^
 ||cornedmurrina.com^
@@ -122523,6 +122576,7 @@ zzzyk.com###Tinfo
 ||crn77.com^$all
 ||crn77.com^$document
 ||crn77.com^$popup
+||crncotdhpraic.site^
 ||crnsddfswrqxz.website^
 ||croakedrotonda.com^
 ||croakglanceskier.com^
@@ -122746,6 +122800,7 @@ zzzyk.com###Tinfo
 ||csalhh.okay.cz^
 ||csbhmxgelwqud.store^
 ||csbmey.viherpeukalot.fi^
+||csbstcyg.com^
 ||cscasuearmpgh.site^
 ||cscbd31jv.com^
 ||cschyogh.com^
@@ -124690,6 +124745,7 @@ zzzyk.com###Tinfo
 ||d3bsbtr7gp443k.cloudfront.net^
 ||d3bviecoc049je.cloudfront.net^
 ||d3c3uihon9kmp.cloudfront.net^
+||d3c6339ed7.com^
 ||d3c8j8snkzfr1n.cloudfront.net^
 ||d3cesrg5igdcgt.cloudfront.net^
 ||d3cgm8py10hi0z.cloudfront.net^
@@ -126783,6 +126839,7 @@ zzzyk.com###Tinfo
 ||defpush.com^
 ||defroststringbenignity.com^
 ||deftlysands.cfd^
+||defuzeedilityshotty.cyou^
 ||defybrick.com^
 ||defygravity.convio.com^
 ||defyhastencommunity.com^
@@ -127053,6 +127110,7 @@ zzzyk.com###Tinfo
 ||dependablerecord.pro^
 ||dependantcarefullyheavenly.com^
 ||dependence39.com^
+||dependencyinreplicas.com^
 ||dependent-boy.com^
 ||dependentadequatemyth.com^
 ||deplaneseven.cfd^
@@ -127073,6 +127131,7 @@ zzzyk.com###Tinfo
 ||deprtolleryzacatec.qpon^
 ||depthsdeficitunited.com^
 ||depucelsurcoat.com^
+||deputesastay.com^
 ||deputizeeverydayexorcist.com^
 ||deputizepacifistwipe.com^
 ||deputyconnate.com^
@@ -127327,6 +127386,7 @@ zzzyk.com###Tinfo
 ||dexerto-cdn.relevant-digital.com/static/tags/*.js
 ||dexerto.com/_next/static/chunks/*.js$script,replace=/dblock:\{enabled:\{dexerto:\{en:!0/dblock:{enabled:{dexerto:{en:!1/
 ||dexerto.com^$referrerpolicy=origin
+||dexesangers.cfd^
 ||dexpredict.com^
 ||dexpredict.com^$popup
 ||dexterrobbins.cf^
@@ -127540,6 +127600,7 @@ zzzyk.com###Tinfo
 ||dhruqpiaftxwk.online^
 ||dhsjpz.bugaboo.com^
 ||dhupptmedfhss.site^
+||dhurrapois.cfd^
 ||dhviddvclnjtg.com^
 ||dhwmtx.stylewe.com^
 ||dhxbrqtpallzi.site^
@@ -127662,6 +127723,7 @@ zzzyk.com###Tinfo
 ||dicaserespostas.fumblingvacation.pro^
 ||dicconbumtrap.com^
 ||diceresembleshudder.com^
+||dicergirnstilbum.qpon^
 ||dicersburnets.cfd^
 ||dicingfulcra.qpon^
 ||diclotrans.com^
@@ -127689,6 +127751,7 @@ zzzyk.com###Tinfo
 ||diemniwm.com^
 ||diena.lt/sites/default/files/Vilniausdiena/Vartotoju%20zona/Eisvinas/kd_prenumerata_optimize.gif
 ||diena.lv/statistics/
+||dienesportify.cfd^
 ||dierem.click^
 ||dietaryyurilent.com^
 ||dietictetherydeprive.cfd^
@@ -128402,6 +128465,7 @@ zzzyk.com###Tinfo
 ||diverecollection.com^
 ||divergentld.com^
 ||diverhaul.com^
+||divestsopuses.qpon^
 ||dividedintegrationtransparent.com^
 ||dividedscientific.com^
 ||divingamends.com^
@@ -129884,12 +129948,14 @@ zzzyk.com###Tinfo
 ||dsckgc.com^
 ||dscmih.com^
 ||dscmxt.com^
+||dscsky.com^
 ||dscuug.com^
 ||dscykd.com^
 ||dsdbbqmgpdfnl.space^
 ||dsdbdt.com^
 ||dsderq.com^
 ||dsdjbj.abracadabra.com.br^
+||dsdkgb.com^
 ||dsdlbu.com^
 ||dsdnhj.com^
 ||dsdordering.kdrp.com^
@@ -129934,6 +130000,7 @@ zzzyk.com###Tinfo
 ||dskkye.com^
 ||dskkza.com^
 ||dskmoo.com^
+||dskrym.com^
 ||dskylp.com^
 ||dslcdd.com^
 ||dslgfw.com^
@@ -130002,6 +130069,7 @@ zzzyk.com###Tinfo
 ||dsraozxhfuifo.site^
 ||dsrbqn.com^
 ||dsrdyw.com^
+||dsrjiz.com^
 ||dsruaa.com^
 ||dssbui.com^
 ||dssqpn.com^
@@ -130206,9 +130274,11 @@ zzzyk.com###Tinfo
 ||dugksbcmvvxdf.site^
 ||dugout.co/das2.js
 ||dugrhmdlsdcop.website^
+||dugweerish.cfd^
 ||dugxfuobfbm.in^
 ||duh0b8nl8uhfn.cloudfront.net^
 ||duhboga.ru^
+||duhklcwbqcfbt.com^
 ||duhkxehelalch.store^
 ||duhxgrfaziemg.site^
 ||duidoaghteqgs.website^
@@ -130831,6 +130901,7 @@ zzzyk.com###Tinfo
 ||e2jda3h01.com^
 ||e2ma.net/track/
 ||e2us4880k.com^
+||e311c9ae61.com^
 ||e336cd5f3c.com^
 ||e3808936be.cdb4bd7cb1.com^
 ||e3837dc23d.3b374de2ee.com^
@@ -130840,6 +130911,7 @@ zzzyk.com###Tinfo
 ||e3c7.com/dh/
 ||e3c7.com/love/
 ||e3hg4i9moilr5n.rest^
+||e3j60qqdk.com^
 ||e3n7jpuwo57nqv.cfd^
 ||e3ol.com/inc/
 ||e403.pandasuite.io^
@@ -131701,6 +131773,7 @@ zzzyk.com###Tinfo
 ||edmanalytics.pandahall.com^
 ||edmfizohztab.com^
 ||edmontonchina.*/pic/
+||edmxwktbhld.com^
 ||ednewsbd.com^
 ||ednplus.com^$third-party
 ||ednqjm.magnanni.com^
@@ -133327,6 +133400,7 @@ zzzyk.com###Tinfo
 ||engagedconfusionfeasible.com^
 ||engagedhits.com^$third-party
 ||engagedpungentrepress.com^
+||engageesubtaskparl.qpon^
 ||engagefront.meteomedia.com^
 ||engagefront.theweathernetwork.com^
 ||engagelab.cc^
@@ -133472,6 +133546,7 @@ zzzyk.com###Tinfo
 ||entailreprintfurnished.com^
 ||entainpartners.com/renderbanner.do?
 ||entainpartners.com^$popup,third-party
+||entamedrabble.shop^
 ||entaspectsofc.org^
 ||entensity.net/crap/
 ||enter-system.com^$third-party
@@ -133498,6 +133573,7 @@ zzzyk.com###Tinfo
 ||enthusiastgaming.net^
 ||enthusiasticfibreassembly.com^
 ||enthusiasticinsanity.com^
+||enticeslabraspails.cfd^
 ||entire-positive.com^
 ||entiremain.com^
 ||entjgcr.com^
@@ -133813,6 +133889,7 @@ zzzyk.com###Tinfo
 ||erate.co.il^$third-party
 ||erateaster.cyou^
 ||erb.tremblant.ca^
+||erbaiaqibimdn.space^
 ||erbiscusysexbu.org^
 ||erbqwgtbxifxz.online^
 ||ercockremarke.org^
@@ -134694,6 +134771,7 @@ zzzyk.com###Tinfo
 ||eveonline.com/redir.asp$third-party
 ||ever8trk.com^
 ||ever8trk.com^$popup
+||everardcotland.cfd^
 ||evercrucial.com^
 ||everestjs.net^$third-party
 ||everesttech.net^
@@ -135026,6 +135104,7 @@ zzzyk.com###Tinfo
 ||exmainclcknew.com^
 ||exmarketplace.com^$third-party
 ||exmeqy.smartbuyglasses.de^
+||exmnclk.com^
 ||exmoo.com/js/ad-position/
 ||exmwfltxyxwmr.website^
 ||exnesstrack.com^
@@ -135139,6 +135218,7 @@ zzzyk.com###Tinfo
 ||explore.landcentral.com^
 ||explore.revenera.com^
 ||explore.waldenu.edu^
+||expmclck.com^
 ||expmnclick.com^
 ||expo.nada.org^
 ||expoclknu.com^
@@ -135480,6 +135560,7 @@ zzzyk.com###Tinfo
 ||f3737ec16b.d57b6d1e63.com^
 ||f373c4c8d6.cda84af905.com^
 ||f3dfe4416a.528b4dabec.com^
+||f3e1df5eea.com^
 ||f3k194f9i7.com^
 ||f418509b38.com^
 ||f42aee9897.78f201e862.com^
@@ -135724,6 +135805,7 @@ zzzyk.com###Tinfo
 ||falhcegbmvooc.site^
 ||falkag.net^
 ||falkenbergtorget.se/sc.gif?
+||falkloo.cloud^
 ||falkwo.com^
 ||fallacydungon.shop^
 ||fallback.attntags.com^
@@ -136618,6 +136700,7 @@ zzzyk.com###Tinfo
 ||fhngty.vetsecurite.com^
 ||fhnuovxnllnkk.space^
 ||fhodizssguipg.store^
+||fhoegaomuumuz.online^
 ||fhoodmdcbyqxt.online^
 ||fhorrhvymc.com^
 ||fhovoldaw.com^
@@ -136685,6 +136768,7 @@ zzzyk.com###Tinfo
 ||fieldedtieback.cyou^
 ||fieldtinypirate.com^
 ||fiendchewing.com^
+||fiendlyoxhouse.cyou^
 ||fiestlxsufwl.com^
 ||fiexpectthat.org^
 ||fifa.com/api/v*/ad-manager/$xmlhttprequest,redirect=nooptext
@@ -137835,6 +137919,7 @@ zzzyk.com###Tinfo
 ||fmpaeahyrevy.com^
 ||fmpezkwxyqryq.website^
 ||fmpjka.moroccanoil.com^
+||fmpkdawgv.com^
 ||fmpub.net^
 ||fmqidg.letras.com^
 ||fmqidg.letras.mus.br^
@@ -138932,6 +139017,7 @@ zzzyk.com###Tinfo
 ||frontthirteencuff.com^
 ||frookshop-winsive.com^
 ||froomle.com^$third-party
+||frorenkoines.shop^
 ||frostdivinityrelevant.com^
 ||frostnsullivan.advancedtech.com^
 ||frostscanty.com^
@@ -139714,6 +139800,7 @@ zzzyk.com###Tinfo
 ||g178j339ev5qg3je.cfd^
 ||g1980843350.co^
 ||g1be.swisslife-direct.fr^
+||g1nphkmokzf1y9bzw9lep95816.rest^
 ||g1okon6cq7lpn5n8whof25p.cfd^
 ||g1thub.com^
 ||g2.ganjing.world^
@@ -143149,6 +143236,7 @@ zzzyk.com###Tinfo
 ||gpfwx.cn^
 ||gpgnondqpwgpd.space^
 ||gphljspaprvsl.online^
+||gphnmtjcyivjc.site^
 ||gpiebbxurugod.online^
 ||gpiljd.thetiebar.com^
 ||gpinoqrmayfq.com^
@@ -144054,6 +144142,7 @@ zzzyk.com###Tinfo
 ||gunlortnzuzax.space^
 ||gunmi.cn^$third-party
 ||gunnungalnus.cyou^
+||gunont.xyz^
 ||gunselsdern.shop^
 ||gununsesi.info/banner/$third-party
 ||gununsesi.info/wp-content/uploads/*/virtual_road_300_200.gif
@@ -144254,6 +144343,7 @@ zzzyk.com###Tinfo
 ||gybmppuezjtqe.space^
 ||gybtgfobmqoqw.website^
 ||gybyxsy1588.com^
+||gycjygwxcm.com^
 ||gycrrespjfqwk.store^
 ||gycz2v4ch.com^
 ||gyehtm.thebridge.it^
@@ -144323,6 +144413,7 @@ zzzyk.com###Tinfo
 ||gzbcuy.mamarella.com^
 ||gzberdhytgbsy.website^
 ||gzbivgztyxmdj.site^
+||gzbsycvhzlukb.site^
 ||gzcemlpnhojgs.space^
 ||gzclatfhwvpsk.space^
 ||gzcuxvtvjdxrz.site^
@@ -145364,6 +145455,7 @@ zzzyk.com###Tinfo
 ||helmethomicidal.com^$popup
 ||helmssiestas.qpon^
 ||helmsuction.com^
+||helodesmaoism.qpon^
 ||heloereister.top^
 ||help.japandigest.info^
 ||helpdesk.thinkhdi.com^
@@ -145385,6 +145477,7 @@ zzzyk.com###Tinfo
 ||hemblx.vans.cl^
 ||hemenindir.to^
 ||hemineedunks.com^
+||hemipodbangsupsends.cyou^
 ||hemisphere2meaning.com^
 ||hemnes.win^
 ||hemnes.win^$third-party
@@ -145642,6 +145735,7 @@ zzzyk.com###Tinfo
 ||hfttufu4jo.top^
 ||hftxbq.top^
 ||hfvn6kcfykruk79p337e69h8pnrw.cfd^
+||hfvnpiiqyuyxw.online^
 ||hfvura.noriel.ro^
 ||hfxvwhstgitib.site^
 ||hfyavgagbiidq.site^
@@ -145958,6 +146052,7 @@ zzzyk.com###Tinfo
 ||hirwwguwdvsoe.website^
 ||hisense.com/ta.js
 ||hisfwbkl.com^
+||hisp.in^
 ||hispidtux.com^
 ||hissharppremiere.com^
 ||histais.com/js/15_as.js
@@ -146481,6 +146576,7 @@ zzzyk.com###Tinfo
 ||hollaforums.com/if/rc
 ||hollandbusinessadvertising.nl^
 ||hollinjowtersinsyne.cyou^
+||holloroomful.cfd^
 ||hollow-mess.com^
 ||hollow-owner.pro^
 ||hollowcharacter.com^
@@ -146627,6 +146723,7 @@ zzzyk.com###Tinfo
 ||horizontallypolluteembroider.com^
 ||horizontallyresearchpolar.com^
 ||horizonungyve.cyou^
+||horlajohan.qpon^
 ||hormeswizzle.com^
 ||horncreature.com^
 ||horndestructnosebleed.com^
@@ -146885,6 +146982,7 @@ zzzyk.com###Tinfo
 ||hpacdn.pornpics.com^
 ||hpacdn.pornpics.de^
 ||hpadjptcyyafh.space^
+||hpapmsbhbdlit.site^
 ||hpark-adobe.branch.rocks^
 ||hpark-beta-moengage.branch.rocks^
 ||hpark-brazesp.branch.rocks^
@@ -147124,6 +147222,7 @@ zzzyk.com###Tinfo
 ||hsnpvcdgenfwg.space^
 ||hsnrjetnllgcu.online^
 ||hsnskx.care^
+||hsoihhfdxtfau.site^
 ||hsosldhfbjtss.website^
 ||hspcbbhhmusop.online^
 ||hsqxrxoxna.com^
@@ -148457,6 +148556,7 @@ zzzyk.com###Tinfo
 ||ientrymail.com^
 ||ienvyr5v84jrlx.tb7m77nh4jov46qbm2eciw5.cyou^
 ||ieogwnrsgnfsz.online^
+||ieozzwmfffcfz.site^
 ||iepfcy.farmandfleet.com^
 ||iequiguknwrsk.store^
 ||iergajfaavnimv.com^
@@ -148823,6 +148923,7 @@ zzzyk.com###Tinfo
 ||ikahnruntx.com^
 ||ikaka.com/globalad/
 ||ikbtrpnc.com^
+||ikcbrbysybrqk.online^
 ||ikcfbfcsusubx.site^
 ||ikcrjbumpz.com^
 ||ikdttmwzfbfdg.space^
@@ -148926,6 +149027,7 @@ zzzyk.com###Tinfo
 ||ilpwrmtcbst.com^
 ||ilqtskaqbxdrj.website^
 ||ilrkcyoqtybaf.website^
+||ilrzzwgdvstdw.site^
 ||ilsdbeladkgaj.com^
 ||ilshiletterismype.org^
 ||ilsussidiario.net/images/banner-*.
@@ -148933,6 +149035,7 @@ zzzyk.com###Tinfo
 ||iltcaf.immobilienscout24.de^
 ||iltrovatore.it/vp.htm
 ||ilviaggionellatesta.hubhubhub.name^
+||ilvnmoqblnvrp.site^
 ||ilvqos.lyst.es^
 ||ilvumysnmlrvr.space^
 ||ilvuqx9vlt.com^
@@ -151492,6 +151595,7 @@ zzzyk.com###Tinfo
 ||insanetrack.com^
 ||insanityzealovercome.com^
 ||insbergs.lv/ins_statistics/
+||inscapeclosure.cfd^
 ||inscribemutenessforced.com^
 ||inscribenaiveavoid.com^
 ||inscriptionduchessbooks.com^
@@ -151690,6 +151794,7 @@ zzzyk.com###Tinfo
 ||instaruptilt.com^
 ||instastory.net/header/detect.js
 ||insteadectoderm.com^
+||insteadmodification.com^
 ||insteadphooey.com^
 ||insticator.com^$third-party
 ||instinctiveicilywan.com^
@@ -152267,6 +152372,7 @@ zzzyk.com###Tinfo
 ||ipr9t1nlz5qwrze8y.rest^
 ||ipredictive.com^
 ||iprefer.com.tw^$third-party
+||iprfgjoxrodao.site^
 ||iprima.cz/*/*tagid=*&keywords=$domain=iprima.cz
 ||iprkesoxo.com^
 ||ipro.com^
@@ -153474,6 +153580,7 @@ zzzyk.com###Tinfo
 ||jbqmjdbxsxlyj.site^
 ||jbqtnmomoetzz.site^
 ||jbrieonvryioo.space^
+||jbriyba0f.com^
 ||jbtqolskzxoky.online^
 ||jbtul.com^
 ||jbtzenvvhqaaf.website^
@@ -153549,6 +153656,7 @@ zzzyk.com###Tinfo
 ||jcyabxevvwbrn.icu^
 ||jcypfmgqpkkhosm.com^
 ||jcyy3wifq.com^
+||jczglhsmeexjk.space^
 ||jd-bbs.com^*/gif/
 ||jd-mail.co.uk^
 ||jd.btmeifeng.cn^
@@ -153670,6 +153778,7 @@ zzzyk.com###Tinfo
 ||jeekomih.com^$popup
 ||jeeng.com^$third-party
 ||jeepearlobe.com^
+||jeepviolinasoueef.qpon^
 ||jeepyy.com^$third-party
 ||jeeqpzncxmyjy.store^
 ||jeestauglahity.net^
@@ -154118,6 +154227,7 @@ zzzyk.com###Tinfo
 ||jknarp.kakaku.com^
 ||jkntebxbvq.com^
 ||jkobiwamdlri.in^
+||jkpes.com^
 ||jkpzthxjt.com^
 ||jkqiweqrxsieb.website^
 ||jkr5e4mhfge5t2vt3.rest^
@@ -154400,6 +154510,7 @@ zzzyk.com###Tinfo
 ||jointcap.pro^
 ||jointerestpred.cyou^
 ||joinus.holidayseniorliving.com^
+||jojackal.com^
 ||joka.it/inquiero/isapi/csf.dll?
 ||jokedecays.com^
 ||jokercheerfullylet.com^
@@ -155769,6 +155880,7 @@ zzzyk.com###Tinfo
 ||kcqoej.roborock.com^
 ||kcqstn35as.com^
 ||kcrojyldwmhig.site^
+||kcsnecwd.com^
 ||kctag.net^
 ||kctag.net^$third-party
 ||kcuxobcjehjxgsh.com^
@@ -156922,6 +157034,7 @@ zzzyk.com###Tinfo
 ||kriptoparahaber.care^
 ||kristechwire.actonservice.com^
 ||krisydark.com^
+||krjlfefqxbwft.site^
 ||krjxhubmrumxk.online^
 ||krjxhvyyzp.com^
 ||krjxhvyyzp.com^$popup
@@ -157326,6 +157439,7 @@ zzzyk.com###Tinfo
 ||ky1amps1loy8iabe.pleasedonotblockme.com^
 ||ky595images.com^
 ||ky891.oss-*.aliyuncs.com^
+||kyatmilrind.qpon^
 ||kyccmn.com^
 ||kychq.cn^
 ||kydcwp.landwirt.com^
@@ -158327,6 +158441,7 @@ zzzyk.com###Tinfo
 ||lederer.nl/incl/stats.js.php?
 ||ledevoir.com/js/pianoAnalyticsTags.js
 ||ledgeviewpartners.actonservice.com^
+||ledgyplane.shop^
 ||ledlpcotdwpub.website^
 ||lednews.powerint.com^
 ||leech.carolgilabert.me^
@@ -160384,6 +160499,7 @@ zzzyk.com###Tinfo
 ||lknvksrvlawsh.life^
 ||lknxdluctcdyou.com^
 ||lkoyknsumbkau.online^
+||lkpda6xuy.com^
 ||lkpjbr.icu^
 ||lkpmprksau.com^
 ||lkpseyc3d.com^
@@ -162054,6 +162170,7 @@ zzzyk.com###Tinfo
 ||lubjakntiafcl.space^
 ||lubqzhp4qubvg2p.6epv2lqboiwp3b5zrgcm39zj.cfd^
 ||lubtuwpcdijwv.online^
+||lubwdwwrazohg.website^
 ||lucanet.actonservice.com^
 ||lucentanxiouslyfleeting.com^
 ||luciankybele.com^
@@ -162199,6 +162316,7 @@ zzzyk.com###Tinfo
 ||luteicchainessmeary.cyou^
 ||lutouwang.net/static/images/boss_gao_hb.jpeg
 ||lutouwang.net/static/js/mv_ad
+||luujhia.com^
 ||luumhi.whatonearthcatalog.com^
 ||luuming.com^
 ||luuonz.motoblouz.com^
@@ -168680,6 +168798,7 @@ zzzyk.com###Tinfo
 ||mkekzahca.com^
 ||mkfbgiwbkaslj.online^
 ||mkff.cn^
+||mkfhaqmf.com^
 ||mkfjbitxzlhijfcenxej.top^
 ||mkg.colfondos.co^
 ||mkgbfykqrmwti.site^
@@ -169066,6 +169185,7 @@ zzzyk.com###Tinfo
 ||mobfox.com^
 ||mobi.yanosik.pl^
 ||mobiads.ru^
+||mobiadvert.livesportmedia.eu^
 ||mobicow.com^
 ||mobidriven.com^
 ||mobifobi.com^
@@ -169229,6 +169349,7 @@ zzzyk.com###Tinfo
 ||moghulnash.com^
 ||mogointeractive.com^
 ||moguldom.com^$third-party
+||moh5z9vikv7ve2684jm.rest^
 ||mohamed.net.anwalt.de^
 ||moharcronet.com^
 ||mohardinomys.cyou^
@@ -169924,6 +170045,7 @@ zzzyk.com###Tinfo
 ||mqwdgnbntkgen.space^
 ||mqwqas.marketbio.pl^
 ||mqxbtsawpuulc.store^
+||mqzfvlchjfiki.com^
 ||mqzoid.vintorte.com^
 ||mr-jatt.im/ads/
 ||mr-rank.de^
@@ -170272,6 +170394,7 @@ zzzyk.com###Tinfo
 ||muesliyoudith.cyou^
 ||muffinfeudalactually.com^
 ||muffinsum.com^
+||mufflecosingshaktis.cfd^
 ||muffled-rock.pro^
 ||muffledexplanation.pro^
 ||muffledmy.com^
@@ -170446,6 +170569,7 @@ zzzyk.com###Tinfo
 ||mutinyhq.io^$third-party
 ||mutipugly.com^
 ||muuxrbdsheuhg.space^
+||muvdpeigdxvyc.site^
 ||muvflix.com^$popup
 ||muwmedia.com^
 ||muwyib.lettuce.co.jp^
@@ -170486,6 +170610,7 @@ zzzyk.com###Tinfo
 ||mvjigogkqlgxo.icu^
 ||mvjkbj.2-carat.net^
 ||mvjkbj.inazumanews2.com^
+||mvjnibdoiqd.com^
 ||mvmbs.com^$popup
 ||mvnhdtqphlkmy.website^
 ||mvouhltr.com^
@@ -170536,6 +170661,7 @@ zzzyk.com###Tinfo
 ||mwhjmncborxmg.website^
 ||mwiynfejuiwyv.space^
 ||mwizcirifgi.in^
+||mwjfiwyvo.com^
 ||mwka.cc/static/gg.
 ||mwkbxehegwjtrp.com^
 ||mwkxsimgwddbx.space^
@@ -171006,6 +171132,7 @@ zzzyk.com###Tinfo
 ||mziqlwrhqktsdy.com^
 ||mzitrqkzyn57tcr.cfd^
 ||mzjojzwbrqdqv.site^
+||mzkedbvhl.com^
 ||mzldzb.crocs.pl^
 ||mzmvcdhvehplz.site^
 ||mzmxdown.com^
@@ -172831,6 +172958,7 @@ zzzyk.com###Tinfo
 ||nlkli.com^
 ||nlkylpo.com^
 ||nllddbvlkwgbs.online^
+||nllgzvgoudbdnq.com^
 ||nllvrimafveet.site^
 ||nllzvzafpfodg.space^
 ||nlmhhgvljqktf.website^
@@ -172928,6 +173056,7 @@ zzzyk.com###Tinfo
 ||nniorecc.com^
 ||nnivvr.zimmo.be^
 ||nnjizwcurchyp.online^
+||nnjlwnusijjjw.space^
 ||nnkeoi.timarco.com^
 ||nnkkwfcnwkzud.space^
 ||nnkkxb.nuts.com^
@@ -172979,6 +173108,7 @@ zzzyk.com###Tinfo
 ||noblemanhandicraftpot.com^
 ||noblestprabhu.qpon^
 ||noblocktape.com/stat/
+||noblyalecs.cyou^
 ||nobodymiller.com^
 ||nocaadobefpc.optus.com.au^
 ||nocccxnarymvl.store^
@@ -173363,6 +173493,7 @@ zzzyk.com###Tinfo
 ||npczil.maxandco.com^
 ||npdeizwvizoeh.space^
 ||npdkwrrh.com^
+||npdokqeighxsy.site^
 ||npecialukizeiasnin.com^
 ||npfirjnuafytb.online^
 ||npfnnmbcuotel.website^
@@ -173413,6 +173544,7 @@ zzzyk.com###Tinfo
 ||nqagqrgmn.com^
 ||nqaivjdsswukc.website^
 ||nqbcf.cn/html/top
+||nqbigg1bcfxbk3h3.rest^
 ||nqbukatzrtcve.site^
 ||nqcbgz.cocopanda.se^
 ||nqcpwqqo.com^
@@ -174537,6 +174669,7 @@ zzzyk.com###Tinfo
 ||ocular.mydealz.de^
 ||ocular.promodescuentos.com^
 ||ocvrulo.digital^
+||ocwhzckzcim.com^
 ||ocwjcuwwa.in^
 ||ocwlhv.ecid.com.br^
 ||ocwutmrfbsrwy.store^
@@ -175080,6 +175213,7 @@ zzzyk.com###Tinfo
 ||ojrq.net^$document
 ||ojrq.net^$document,badfilter
 ||ojshkarhebug.in^
+||ojslggrkhzzix.online^
 ||ojufuk.vincecamuto.com^
 ||ojuvjqymmcyos.site^
 ||ojvxtz.junonline.jp^
@@ -176281,6 +176415,7 @@ zzzyk.com###Tinfo
 ||opximages.webtool.net^
 ||opyavarfwqcpf.store^
 ||opywounmiu.com^
+||opzawpactdir.in^
 ||opzphurkro.com^
 ||opzxapovfra.in^
 ||oqbimz.aviasales.ru^
@@ -176295,6 +176430,7 @@ zzzyk.com###Tinfo
 ||oqidne.itaka.pl^
 ||oqisfnvewbcaz.online^
 ||oqiuuznwfdqbb.website^
+||oqivylqsofnnl.site^
 ||oqjzazobpofq.in^
 ||oqkhxgzljvqzr.store^
 ||oqmacnov.in^
@@ -177256,6 +177392,7 @@ zzzyk.com###Tinfo
 ||oykfrenzqxywv.online^
 ||oyksoft.com/assets/images/*.gif
 ||oyksoft.com/show/b.
+||oyl8v127pepp6l7ik37ieu.cfd^
 ||oylblokar.com^
 ||oyllhwxhhwlir.site^
 ||oylyaz.mrkoll.se^
@@ -177282,6 +177419,7 @@ zzzyk.com###Tinfo
 ||oyydrqvuoahcz.online^
 ||oyyqan.hejoscar.dk^
 ||oyz61nhz8.com^
+||oyzcvrmyqmd.com^
 ||oyzrtfwttwnjv.site^
 ||oz6q1drif.com^
 ||ozafzlbjhnmfx.website^
@@ -178190,6 +178328,7 @@ zzzyk.com###Tinfo
 ||paramedicexam.quantresear.ch^
 ||paramedicwarlock.com^
 ||parameter.dk^$third-party
+||parameteroutprocedures.com^
 ||parameterscoal.com^
 ||parametersfrequency.com^
 ||parametre.online^$third-party
@@ -178579,6 +178718,7 @@ zzzyk.com###Tinfo
 ||pbgcxdfyfgjlt.online^
 ||pbgkweapdycud.website^
 ||pbgrd.com^$third-party
+||pbhdhxsamysrd.com^
 ||pbiauzycouesz.space^
 ||pbikowiwtqlpd.website^
 ||pbizeusoaxyfl.online^
@@ -179274,6 +179414,7 @@ zzzyk.com###Tinfo
 ||pfltjr.essentialnutrition.com.br^
 ||pfmiliexijdfl.website^
 ||pfmmzmdba.com^
+||pfmzymkxwumrf.site^
 ||pfoaclkupfhu.in^
 ||pfosuclihgjxi.space^
 ||pfp.sina.com.cn/
@@ -181195,6 +181336,7 @@ zzzyk.com###Tinfo
 ||popmycash.com^
 ||popped.biz^$popup
 ||poppedcushawparra.cfd^
+||popplenovcicfluible.cyou^
 ||poppysol.com^
 ||poprevenue.com^
 ||poprtb.com^
@@ -181690,6 +181832,7 @@ zzzyk.com###Tinfo
 ||ppggkvponl.com^
 ||ppgqvz.bigmotoringworld.co.uk^
 ||pphieftkuwccw.site^
+||pphnereis.cyou^
 ||pphwrevr.com^$third-party
 ||ppkafjqvlvawu.space^
 ||ppkhkibjokegn.online^
@@ -182265,6 +182408,7 @@ zzzyk.com###Tinfo
 ||privatewebseiten.com^$third-party
 ||privetsreerect.cyou^
 ||privilegedmansfieldvaguely.com^$popup
+||privilegemoreovermarijuana.com^
 ||privymktg.com^$third-party
 ||prize-brother.pro^
 ||prizeadultery.com^
@@ -182924,6 +183068,7 @@ zzzyk.com###Tinfo
 ||psonstrentie.info^
 ||psothoms.com^
 ||psotudev.com^$popup
+||psozhffxxezbd.space^
 ||pspibwwzpxofu.website^
 ||pspqlm.rndsystems.com^
 ||pspsorcjsdxcd.website^
@@ -184319,6 +184464,7 @@ zzzyk.com###Tinfo
 ||qhdlz.net/uploads/glxs/980x120.jpg
 ||qhdrmniqdbqa.com^
 ||qheg.cn^
+||qhfydjxsuseid.space^
 ||qhgbxmuytmnpb.website^
 ||qhherqral.com^
 ||qhiatcfrywgse.click^
@@ -185080,6 +185226,7 @@ zzzyk.com###Tinfo
 ||quarterlybeyond.pro^
 ||quarterlyimportance.pro^
 ||quartic.pl^$third-party
+||quasheenunhood.com^
 ||quasicurrant.com^
 ||quasly.net^
 ||quasor.net^
@@ -186429,6 +186576,7 @@ zzzyk.com###Tinfo
 ||reaujwzwzkdih.store^
 ||reauojyojmlcc.site^
 ||reauthenticator.com^
+||reavershollowarpath.cyou^
 ||rebakebelage.com^
 ||rebbesitemize.shop^
 ||rebegincantdog.qpon^
@@ -188000,6 +188148,7 @@ zzzyk.com###Tinfo
 ||ricracsmimpeidemibob.cyou^
 ||riddancemanufacturerextraction.com^
 ||riddancepants.com^
+||riddeddoggiesnovelet.qpon^
 ||riddenlernaea.com^
 ||riddmqqubqwnj.website^
 ||rideradjective.com^
@@ -189964,6 +190113,7 @@ zzzyk.com###Tinfo
 ||rwqovmoezrvrv.top^
 ||rwrnkb.lifelongcollectibles.com^
 ||rwryla.theblockshop.com.au^
+||rwszfuomthhmi.website^
 ||rwtezd.icu^
 ||rwtraqur.com^
 ||rwtzv9ehv.com^
@@ -190373,7 +190523,6 @@ zzzyk.com###Tinfo
 ||s.hdsupplysolutions.com^
 ||s.hellporno.buzz^
 ||s.hhyggy.com^
-||s.hisp.in^
 ||s.hkartg.com^
 ||s.hm.com^
 ||s.holm.ru/stat/
@@ -190881,6 +191030,7 @@ zzzyk.com###Tinfo
 ||sabbatsescudo.cfd^
 ||sabbatsslighty.cfd^
 ||sabdljzmuakkt.space^
+||sabellaasepsis.cfd^
 ||sabergood.com^
 ||sabic.actonservice.com^
 ||sabingvia.shop^
@@ -191624,6 +191774,7 @@ zzzyk.com###Tinfo
 ||satisfyruns.com^
 ||satking.de/images/banners/
 ||satmon.neekstore.com^
+||satoriformitysml.cyou^
 ||satracking.cubiq.com^
 ||satracking.finning.com^
 ||satroki.tech/api/JdUnion
@@ -193759,6 +193910,7 @@ zzzyk.com###Tinfo
 ||setbeat.com^
 ||setboltdal.cyou^
 ||seteamsobtantion.com^$popup
+||sethnahanemouth.cfd^
 ||setimodia.hubhubhub.name^
 ||setka.media^
 ||setksohxkggca.online^
@@ -194896,6 +195048,7 @@ zzzyk.com###Tinfo
 ||sim-technik.de/dvs.gif?
 ||sim-technik.de^*&uniqueTrackId=
 ||sim.lnsiurd.com^
+||simardj.qpon^
 ||simetra.tracking.ringieraxelspringer.tech^
 ||simg.bwin.be^
 ||simg.bwin.com^
@@ -195108,6 +195261,7 @@ zzzyk.com###Tinfo
 ||sirenecoalite.cfd^
 ||sireundermineoperative.com^
 ||sirgyzvvvnpyw.space^
+||sirionelowsing.cyou^
 ||siriusxmstore.com/api/collect
 ||sirsplajp.com^
 ||sis.facesittingbbw.com^
@@ -195208,6 +195362,7 @@ zzzyk.com###Tinfo
 ||situationsparkler.com^
 ||situduiacvaek.site^
 ||situratite.com^
+||situtippee.cfd^
 ||sitv.com.cn/cookiead.php
 ||siusmv.coraltravel.pl^
 ||siutaodka.com^
@@ -200439,6 +200594,7 @@ zzzyk.com###Tinfo
 ||spiritualslower.com^
 ||spirometry.mom^
 ||spirteddvaita.com^
+||spirtswedding.qpon^
 ||spirtzekzufolo.cyou^
 ||spissflunkey.qpon^
 ||spitefuldecision.com^
@@ -204624,6 +204780,7 @@ zzzyk.com###Tinfo
 ||subtitledb.org/js/adblockcheck.js
 ||subtitletools.com/images/nord/nordvpn-banner.jpg
 ||subtlefinger.pro^
+||subtlemath.pro^
 ||subtlemillenniumgallop.com^
 ||subtleretortspat.com^
 ||subtractfadeclient.com^
@@ -204732,6 +204889,8 @@ zzzyk.com###Tinfo
 ||suitedeatercrutch.com^
 ||suiteenvelopetyran.com^
 ||suiyishop.cn/zhuangxiu_
+||sujgberbgcyza.online^
+||sujgsrsppqoij.site^
 ||sujmazbul.in^
 ||sukjdmsazsmuw.space^
 ||sukkisukki.com/pu.js
@@ -204831,6 +204990,7 @@ zzzyk.com###Tinfo
 ||sunuabuahgfsd.space^
 ||sunwayzingierlenaean.qpon^
 ||suolbcutqqzpj.space^
+||suoqmcworgd.com^
 ||suowukoqezecv.website^
 ||sup-idea.com/jquerys.js
 ||sup.srvtax.com^
@@ -205070,6 +205230,7 @@ zzzyk.com###Tinfo
 ||sutraf.com^
 ||sutzotlenmcem.store^
 ||suunta.visma.fi^
+||suuwomhpbkddv.space^
 ||suvloxmlkfier.online^
 ||suvntjrxksruf.space^
 ||suvxztxz.com^
@@ -205416,6 +205577,7 @@ zzzyk.com###Tinfo
 ||switchtwentiesduty.com^
 ||swivesguzzle.cfd^
 ||swivingvulvaechoky.qpon^
+||swkqrgwlj.com^
 ||swlbivsjzgxri.rocks^
 ||swlogic.wpu.sh^
 ||swlvbfovkhela.space^
@@ -205753,6 +205915,7 @@ zzzyk.com###Tinfo
 ||syuaqkkanztrx.site^
 ||syvvsv.artex.com.br^
 ||syvxdjgvgfuct.com^
+||sywijqrehycts.website^
 ||sywxrvcisdjxe.store^
 ||syycwa.barcelo.com^
 ||syyynjvgdbmtj.online^
@@ -206795,6 +206958,7 @@ zzzyk.com###Tinfo
 ||tamus.net.anwalt.de^
 ||tamxlmwxtizil.website^
 ||tanceteventu.com^
+||tandavawhorly.cfd^
 ||tangerineprestigiousbehaved.com^
 ||tangible-guarantee.pro^
 ||tangiblearroganceride.com^
@@ -207320,6 +207484,7 @@ zzzyk.com###Tinfo
 ||tbgehesqivycnf.com^
 ||tbgwyrxwtmfrh.site^
 ||tbhgbwpayxaaal.com^
+||tbhjdhxzkorni.website^
 ||tbib.org/gaming/
 ||tbib.org/tbib.
 ||tbihvt.pickawood.com^
@@ -208143,6 +208308,7 @@ zzzyk.com###Tinfo
 ||tfmdrayepzgft.website^
 ||tfnbbnmx.com^
 ||tfnvuckb.pro^
+||tfnyipzwixwib.site^
 ||tfomxpkyvdzyi.space^
 ||tfosrv.com^
 ||tfoyfx.dukefotografia.com^
@@ -208493,6 +208659,7 @@ zzzyk.com###Tinfo
 ||thickteaching.com^
 ||thieflamppost.com^
 ||thighlemonadejell.com^
+||thillssurlier.qpon^
 ||thiltoocmom.com^$popup
 ||thimblestrangearchitect.com^
 ||thind-gke-euw.prd.data.corp.unity3d.com^
@@ -208800,6 +208967,7 @@ zzzyk.com###Tinfo
 ||tiglon.beyondco.de^
 ||tiglon.davidroessli.com^
 ||tiglonssaqib.cyou^
+||tignumhexogen.cyou^
 ||tigronesizzles.com^
 ||tigtag.com/images/*1000x
 ||tigtag.com/images/pic1/
@@ -209732,6 +209900,7 @@ zzzyk.com###Tinfo
 ||tonefuse.com^
 ||tonefuse.com^$popup
 ||tonefuse.com^$third-party
+||tonemeatwain.cfd^
 ||tonemedia.com^
 ||tongabonga.com/nudegirls
 ||tongactless.cyou^
@@ -212272,8 +212441,8 @@ zzzyk.com###Tinfo
 ||tracking.carsales.com.au^
 ||tracking.cat898.com^
 ||tracking.cdiscount.com^
-||tracking.cds.dmm.co.jp^
-||tracking.cds.dmm.com^
+||tracking.cds.dmm.co.jp^$image
+||tracking.cds.dmm.com^$image
 ||tracking.cello-square.com^
 ||tracking.cengage.com^
 ||tracking.cenomicenters.com^
@@ -214211,6 +214380,7 @@ zzzyk.com###Tinfo
 ||trysera.com^$third-party
 ||trytestifysupply.com^
 ||tryzens-analytics.com^
+||trzzolcmtmqkq.space^
 ||ts-analysis.shoalter.com^
 ||ts.delfi.lt^
 ||ts.fi/Statistics/Log$image
@@ -214591,6 +214761,7 @@ zzzyk.com###Tinfo
 ||turkeernohow.com^
 ||turkey.tella.tv^
 ||turkeychoice.com^
+||turkeyicaria.qpon^
 ||turklefalser.cfd^
 ||turkmenportal.com/images/uploads/banners/
 ||turkstench.com^
@@ -214880,6 +215051,7 @@ zzzyk.com###Tinfo
 ||two.tracedock.com^
 ||twoeej.carrefour.fr^
 ||twofunarcg.in^
+||twojtetfuruse.website^
 ||twpasol.com^
 ||twpewseamhrz.com^
 ||twpmswdmu.com^
@@ -215413,6 +215585,7 @@ zzzyk.com###Tinfo
 ||ucus.ucweb.com^
 ||ucuumhsxenzwq.online^
 ||ucuypyhcns.com^
+||ucvqpbfhvtreh.com^
 ||ucvvbkdkmodoyj.com^
 ||ucweb.com/collect/
 ||ucwkvipzetzxc.space^
@@ -216069,6 +216242,7 @@ zzzyk.com###Tinfo
 ||un.ubaike.cn^
 ||un1.lawyernet.cn^
 ||un1gj8w761n61o.rest^
+||un8hlx.com^
 ||unablewhollyold.com^
 ||unacceptabledemand.pro^
 ||unacceptableheavy.pro^
@@ -216195,6 +216369,7 @@ zzzyk.com###Tinfo
 ||underwearcrackerprison.com^
 ||underwearfilletslight.com^
 ||underwriting.allclassical.org/player-banners/
+||undesirablemountain.com^
 ||undesirableratificationprograms.com^
 ||undisjmgvnjgx.site^
 ||undm.qibulo.com^
@@ -216261,6 +216436,7 @@ zzzyk.com###Tinfo
 ||unhappymom.pro^
 ||unhappyquit.pro^
 ||unhappyweakness.com^
+||unhastemetisse.qpon^
 ||unhatedprotei.com^
 ||unhaveuparnacarpel.cyou^
 ||unheadedsouptotal.com^
@@ -216321,6 +216497,7 @@ zzzyk.com###Tinfo
 ||unionadjs.com^
 ||uniondistinction.com^
 ||unionli.com^$third-party
+||uniparabkbndr.cyou^
 ||unipartbellis.shop^
 ||uniqodo.com^$third-party
 ||unique-memory.com^
@@ -216485,6 +216662,7 @@ zzzyk.com###Tinfo
 ||unsere-news.ru^
 ||unsettledbrazenqueue.com^
 ||unsettledradiator.com^
+||unshalesidebox.cfd^
 ||unshaveparaphs.com^
 ||unshutcaitiff.com^
 ||unsightly-listen.com^
@@ -216617,6 +216795,7 @@ zzzyk.com###Tinfo
 ||uooumilwtodnh.website^
 ||uoowu.com/a/zh*.js
 ||uooyoo.com/hz/*str.js
+||uopmvsgtbesfl.online^
 ||uoqosmwekny.com^
 ||uoqxdh.tendapro.it^
 ||uorksewkwesln.space^
@@ -217687,6 +217866,7 @@ zzzyk.com###Tinfo
 ||utrack.hexun.com^
 ||utraff.com^$third-party
 ||utrldrjrsrvbs.online^
+||utrumkepping.cfd^
 ||uts.auction.co.kr^
 ||uts.gmarket.co.kr^
 ||utsgw.auction.co.kr^
@@ -218315,6 +218495,7 @@ zzzyk.com###Tinfo
 ||vavywfsfldhpb.space^
 ||vawntieromykoramate.cyou^
 ||vawonybnkgclb.site^
+||vawpbjphsvpdh.space^
 ||vawturpis.com^
 ||vax-now.com^
 ||vax-now.com^$popup
@@ -218763,6 +218944,7 @@ zzzyk.com###Tinfo
 ||vezsyr.bxblue.com.br^
 ||vf.startpage.com^
 ||vf49j2yzhun24gg776.cfd^
+||vfaisecgl.com^
 ||vfamnpvtqmhpw.site^
 ||vfaorhgal.in^
 ||vfbwcfej.icu^
@@ -218911,6 +219093,7 @@ zzzyk.com###Tinfo
 ||vhmvuggrtbwbn.site^
 ||vhnhtrsswypzj.site^
 ||vhnteccjeyoyj.online^
+||vhnuaatydmqeg.site^
 ||vhnykkjxglcjf.online^
 ||vhotlxp.video.qq.com^
 ||vhova.com^
@@ -219802,6 +219985,7 @@ zzzyk.com###Tinfo
 ||vlzyxkjxfrpku.space^
 ||vm.aty.sohu.com^
 ||vm.target-video.com^
+||vm2u8e8vcgyqjx5pywk.rest^
 ||vm5apis.com^$third-party
 ||vm5xs8nvqh.com^
 ||vmap.v.ad-generation.jp^
@@ -220625,6 +220809,7 @@ zzzyk.com###Tinfo
 ||vziwnogpwvjra.website^
 ||vzkngyik.com^
 ||vzkozuzanvkqv.online^
+||vzkptlzvvrqqw.site^
 ||vzldnxgdbhyle.website^
 ||vzmilkdaptnug.online^
 ||vzmz.com/template/paody/aaaa/*0
@@ -222108,6 +222293,7 @@ zzzyk.com###Tinfo
 ||weepy-attack.com^
 ||weepylack.com^
 ||weescorts.com/html5banners/
+||weetext.pro^
 ||weewci.icu^
 ||weewoogloogru.net^
 ||weezoptez.net^
@@ -222313,6 +222499,7 @@ zzzyk.com###Tinfo
 ||wewearegogogo.com^$popup
 ||wewikdaksmlyw.online^
 ||wewomedia.com^$third-party
+||weworkremotely.com/listing_ads/8/impression?
 ||wewqmwpeesisj.online^
 ||wexevoom.net^
 ||wextap.com^
@@ -223202,6 +223389,7 @@ zzzyk.com###Tinfo
 ||wlx8ht.7pobx6vqzbl8bcpgmevl395yyybblbzzk.cfd^
 ||wlxhzn.godfreys.com.au^
 ||wlxww.com/html/analytics/
+||wlyqjsgkhvlkw.website^
 ||wlzhmngyhuebs.space^
 ||wlzzwzeevbyak.top^
 ||wm-space.youero.com^
@@ -223384,6 +223572,7 @@ zzzyk.com###Tinfo
 ||wogaa.sg/scripts/wogaa.js
 ||wogglehydrae.com^
 ||wogqaqyqakmfl.website^
+||wohlacmisease.qpon^
 ||wohubdmbsq.com^
 ||wohwzigksahep.website^
 ||woiden.id/dist/js/red.js
@@ -223750,6 +223939,7 @@ zzzyk.com###Tinfo
 ||wppyub.mygenerator.com.au^
 ||wprdyqsmmmp.com^
 ||wpshsdk.com^
+||wpsxwkz.com^
 ||wptcd.com^
 ||wpte.lovingforever.pro^
 ||wpu.sh^
@@ -225477,6 +225667,7 @@ zzzyk.com###Tinfo
 ||xaaitpzcofwdm.site^
 ||xabpahjkwqdcq.online^
 ||xacdghbkbelxi.website^
+||xacqduxgdtfuy.space^
 ||xad.com^
 ||xad.dnoticias.pt^
 ||xadcentral.com^
@@ -225640,6 +225831,7 @@ zzzyk.com###Tinfo
 ||xcowtuocxolz.in^
 ||xcowuheclvwryh.com^
 ||xcpmfvlfcdltd.online^
+||xcpqcndbynfcv.website^
 ||xcqfaclqifemm.site^
 ||xcqnheljudxtrm.com^
 ||xcspiqvlapeted.com^
@@ -228388,6 +228580,7 @@ zzzyk.com###Tinfo
 ||yfoujvtxzrdhr.website^
 ||yfowxwcszhsqr.online^
 ||yfpvmd.reed.co.uk^
+||yfqnujpniizil.website^
 ||yfqrdeewqnwvy.net^
 ||yfqtpyfxcfbyq.online^
 ||yfrnkmcdeurmk.top^
@@ -229210,8 +229403,10 @@ zzzyk.com###Tinfo
 ||ypyr.cn^
 ||ypzktj.fly.pl^
 ||yqantasacylcf.site^
+||yqaubeexty.com^
 ||yqavevglfhuol.com^
 ||yqaxvu.leilian-online.com^
+||yqbkaudmv.com^
 ||yqcvqbvcadoqn.space^
 ||yqeaelhqycxcp.website^
 ||yqeshhkcliqgh.website^
@@ -229771,6 +229966,7 @@ zzzyk.com###Tinfo
 ||z32zl64equighu.cfd^
 ||z3617cz9ep.fitness.tappbrothers.com^
 ||z371.chicoer.com^
+||z3lkm5tpziqn541.cfd^
 ||z3x-team.com/wp-content/*-banner-
 ||z41z7py29q1klmxyk25w8b24py94c1gm2j.rest^
 ||z444o.com^$third-party
@@ -230774,6 +230970,7 @@ zzzyk.com###Tinfo
 ||zoiixfvrxcxlp.online^
 ||zoilusdoping.top^$popup
 ||zoine.net^
+||zoiyjzhhjty.com^
 ||zojradtxqximp.website^
 ||zokapwppblsly.website^
 ||zokfgnvzcdimh.website^
@@ -231323,6 +231520,7 @@ zzzyk.com###Tinfo
 ||zzoostbkvfpoy.online^
 ||zzpgiredutflq.space^
 ||zzqyxd.smartpozyczka.pl^
+||zzsfgdah.com^
 ||zzsky.com/images/a_d_
 ||zzsqqx.shopjapan.co.jp^
 ||zzsrygkxasjn.com^
