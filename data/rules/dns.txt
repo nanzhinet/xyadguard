@@ -2,9 +2,9 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-09-03 00:01:27（北京时间）
+! Version: 2026-09-03 11:07:45（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 116337
+! Total count: 116334
 ||*.diwodiwo.xyz^
 ||*.exaapi.com^
 ||*.p2p.huya.com^
@@ -11219,7 +11219,6 @@
 ||ads.townhall.com^
 ||ads.travelaudience.com^
 ||ads.tripod.lycos.de^
-||ads.tripod.lycos.es^
 ||ads.tso.dennisnet.co.uk^
 ||ads.tvb.com^
 ||ads.tvmnews.mt^
@@ -18691,6 +18690,7 @@
 ||bbrav96ax.com^
 ||bbrdbr.com^
 ||bbs.theacademyforconsciousleadership.com^
+||bbs.xhamster.com^
 ||bbssgjpbdrurh.space^
 ||bbtuvgqhflajx.com^
 ||bbtvpnqyvdzmq.website^
@@ -25007,7 +25007,6 @@
 ||client.trustaff.com^
 ||client2009x25.xcdn.ovh^
 ||clientebancario.go-static.info^
-||clientinfo.phimmoizz.net^
 ||clientlog.midomi.com^
 ||clientlog.music.163.com^
 ||clientlog.perfectworldgames.com^
@@ -55931,7 +55930,6 @@
 ||lahscedteo.in^
 ||lahsxicxicuvp.store^
 ||lahwsusoarmbk.site^
-||laichegloavy.com^
 ||laidgreens.com^
 ||laihtsfmbrmog.site^
 ||laimroll.ru^
@@ -77340,7 +77338,6 @@
 ||qoairs.scholl-shoes.com^
 ||qoannfrwdwifv.site^
 ||qobfocmmyhbaw.space^
-||qobuz.surveysparrow.com^
 ||qoclick.com^
 ||qoebdgzpnonpu.online^
 ||qoewovfmkn4rw3u.rest^
