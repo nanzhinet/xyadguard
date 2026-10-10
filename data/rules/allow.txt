@@ -2,7 +2,7 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-10-10 12:30:31（北京时间）
+! Version: 2026-10-11 01:00:22（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
 ! Total count: 14859
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
