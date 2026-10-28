@@ -2,9 +2,9 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-10-28 12:11:06（北京时间）
+! Version: 2026-10-29 01:55:20（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 14873
+! Total count: 14878
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
@@ -12,6 +12,7 @@
 @@$media,stealth=referrer,domain=fakitonye.shop
 @@$popup,domain=datanodes.to,third-party
 @@$stealth=useragent,app=top.rootu.lampa
+@@$subdocument,stealth=referrer,domain=trend48.st|trend48.*|trendy48.online|trendy48.site|trendy48.*
 @@$subdocument,third-party,stealth=referrer,domain=sport.starsites.fun
 @@$subdocument,xmlhttprequest,stealth=referrer|flash,domain=pichive.online
 @@$third-party,stealth=referrer,method=post,document,domain=aii.sh|srnky.com|clksz.com|lnbz.la
@@ -54,6 +55,7 @@
 @@.com/embed2.php?player=$stealth=referrer
 @@.com/js/a_d/$domain=colamanga.com
 @@.com:*/vip/?url=$subdocument,stealth=referrer,domain=agedm.io
+@@.dat|$xmlhttprequest,stealth=referrer,domain=bingebang.st
 @@.dmf.link/dl/$stealth=referrer
 @@.doubleclick.net^$domain=mcstatic.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
@@ -307,7 +309,6 @@
 @@/email-decode.min.js$domain=linkneverdie.net
 @@/embed/*$stealth=referrer,subdocument,domain=ldcstreaming.info|sportsonline.*|elixx.xyz|primefoot.ru|lavents.la
 @@/embed/*$subdocument,stealth=referrer,domain=strims.*|daddyhd.com|daddylive.*
-@@/embed/*$subdocument,stealth=referrer,domain=trend48.st
 @@/embed/*$subdocument,stealth=referrer,domain=vidsrc.*|vidsrc.sh|vsembed.ru
 @@/embed/*$third-party,subdocument,stealth=referrer,domain=sportsbite.*
 @@/embed/*.jpg$subdocument,stealth=referrer,domain=hollymoviehd.cc
@@ -6143,7 +6144,8 @@
 @@||googletagmanager.com/gtag/$domain=usnews.com
 @@||googletagmanager.com/gtag/destination$script,domain=musinsa.com
 @@||googletagmanager.com/gtag/destination?$domain=sloways.eu
-@@||googletagmanager.com/gtag/js$domain=17track.net|9to5mac.com|academy.com|acornonline.com|aena.es|afisha.timepad.ru|aliexpress.com|app.joinhandshake.com|carhartt-wip.com|cbslocal.com|checkout.ao.com|cmoa.jp|cnet.com|cram.com|devclass.com|dholic.co.jp|ecmweb.com|ejgiftcards.com|enmotive.com|espressif.com|euronics.ee|factory.pixiv.net|fanpage.it|farmaciabolli1833.it|game.anymanager.io|gamelog.apexlegends-leaksnews.com|globo.com|gmanetwork.com|herculesstands.com|homeinspector.org|honeystinger.com|hostingvergelijker.nl|huion.com|inforesist.org|kawasaki.com|kinepolis.be|kinepolis.ch|kinepolis.es|kinepolis.fr|kinepolis.lu|kinepolis.nl|liene-life.com|livongo.com|m.putlocker.how|malegislature.gov|mall.heiwa.jp|mirrativ.com|modehasen.de|mond.how|montcopa.org|mopar.com|msm-wroclaw.pl|nihontsushin.com|o2.co.uk|oko.sh|oxylabs.io|panflix.com.br|papajohns.com|plex.tv|pptvhd36.com|proxyorb.com|radiosarajevo.ba|redstoneonline.jp|rhbgroup.com|rintraccialamiaspedizione.it|royalcams.com|schwab.com|seatmaps.com|showroom-live.com|skylar.com|slink.ptit.edu.vn|sloways.eu|square-enix.com|starblast.io|supplementmart.com.au|ticketmaster.com|timparty.tim.it|toptal.com|trespa.info|truckspring.com|virginmedia.com|virginplus.ca|webstatus.dev|winefolly.com|winhappy.com|wps.com|xl-bygg.no|zf1.tohoku-epco.co.jp|zipair.net
+@@||googletagmanager.com/gtag/js$domain=17track.net|5ch.io|9to5mac.com|academy.com|acornonline.com|aena.es|afisha.timepad.ru|aliexpress.com|app.joinhandshake.com|carhartt-wip.com|cbslocal.com|checkout.ao.com|cmoa.jp|cnet.com|cram.com|devclass.com|dholic.co.jp|ecmweb.com|ejgiftcards.com|enmotive.com|espressif.com|euronics.ee|factory.pixiv.net|fanpage.it|farmaciabolli1833.it|game.anymanager.io|gamelog.apexlegends-leaksnews.com|globo.com|gmanetwork.com|herculesstands.com|homeinspector.org|honeystinger.com|hostingvergelijker.nl|huion.com|inforesist.org|kawasaki.com|kinepolis.be|kinepolis.ch|kinepolis.es|kinepolis.fr|kinepolis.lu|kinepolis.nl|liene-life.com|livongo.com|m.putlocker.how|malegislature.gov|mall.heiwa.jp|mirrativ.com|modehasen.de|mond.how|montcopa.org|mopar.com|msm-wroclaw.pl|nihontsushin.com|o2.co.uk|oko.sh|oxylabs.io|panflix.com.br|papajohns.com|plex.tv|pptvhd36.com|proxyorb.com|radiosarajevo.ba|redstoneonline.jp|rhbgroup.com|rintraccialamiaspedizione.it|royalcams.com|schwab.com|seatmaps.com|showroom-live.com|skylar.com|slink.ptit.edu.vn|sloways.eu|square-enix.com|starblast.io|supplementmart.com.au|ticketmaster.com|timparty.tim.it|toptal.com|trespa.info|truckspring.com|virginmedia.com|virginplus.ca|webstatus.dev|winefolly.com|winhappy.com|wps.com|xl-bygg.no|zf1.tohoku-epco.co.jp|zipair.net
+@@||googletagmanager.com/gtag/js$domain=5ch.io
 @@||googletagmanager.com/gtag/js$domain=av01.tv|javhd.com
 @@||googletagmanager.com/gtag/js$domain=battlestick2.net
 @@||googletagmanager.com/gtag/js$domain=bihann.com|nehannn.com
@@ -7714,6 +7716,7 @@
 @@||img-cdn.stackpathcdn.app^$image,stealth=referrer
 @@||img-r1.2xstorage.com^$image,stealth=referrer
 @@||img-r2.2xstorage.com^$image,stealth=referrer
+@@||img-reserve.reimg2.org/images/$stealth=referrer
 @@||img.1fichier.com/css/
 @@||img.achost.top^$stealth=referrer,domain=galge.fun
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
@@ -10077,7 +10080,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=hqq.to
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=htmlsave.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=idhubs.app
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=idol69.net|xcamcovid.com|fc2ppv.stream|blackwidof.org|sweetie-fox.com|hentaicovid.com|pig69.com|fikfok.net|ai18.pics|javball.com|javtele.net|cnxx.me|cosplay18.pics|cnpics.org|3minx.com|javsunday.com|porn4f.org|555fap.com|kin8-av.com|javbee.*|fikfok.net|porn-pig.com|hentai4f.com|cn-av.com|kr-av.com|hentaixnx.com|hentai-sub.com|chinese-pics.com|anime-jav.com|xxpics.org|hentaicovid.org|gofile.download|cosplay-xxx.com|s-porn.com|shentai-anime.com|chinese-pics.vip|hentai-manga.org|cosplaytele.vip|1minx.com|hentaicovid.vip|4up.pics|fc2ppv.me|fc2ppv.stream
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=idol69.net|xcamcovid.com|fc2ppv.stream|blackwidof.org|sweetie-fox.com|hentaicovid.com|pig69.com|fikfok.net|ai18.pics|javball.com|javtele.net|cnxx.me|cosplay18.pics|cnpics.org|3minx.com|javsunday.com|porn4f.org|555fap.com|kin8-av.com|javbee.*|fikfok.net|porn-pig.com|hentai4f.com|cn-av.com|kr-av.com|hentaixnx.com|hentai-sub.com|chinese-pics.com|anime-jav.com|xxpics.org|hentaicovid.org|gofile.download|cosplay-xxx.com|s-porn.com|shentai-anime.com|chinese-pics.vip|hentai-manga.org|cosplaytele.vip|1minx.com|hentaicovid.vip|4up.pics|fc2ppv.me|fc2ppv.stream|javtele.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=iembra2or.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ifate.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=igniel.com
@@ -10127,6 +10130,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=litecoinfaucet.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-cycling-tiz.stream|cyclingtiz.live|tiz-cycling.tv
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-tv-channels.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-xo.lovable.app
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live.golato.io
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live.hitsports.bond
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=livehindustan.com
@@ -12503,7 +12507,7 @@
 @@||speedtest.net/api/js/user-settings|$xmlhttprequest
 @@||speedtest.net/javascript/ads.js
 @@||speedtestcustom.com^$subdocument,stealth=referrer
-@@||speedwebgo.com^$stealth=referrer,domain=blacktoon425.com
+@@||speedwebgo.com^$stealth=referrer,domain=blacktoon426.com
 @@||speedynews.xyz^$generichide
 @@||spezialklinik-neukirchen.de/matomo/$~third-party
 @@||sphinx.tongdun.net^$domain=hainanairlines.com
@@ -14230,6 +14234,7 @@
 @@||waccoe.com^$generichide
 @@||wago.io/js/118.$script
 @@||waimai-guide.ele.me^
+@@||waiting.info/rad_singlepageapp.js^$domain=waiting.info
 @@||wakatest.keydelivery.northeurope.media.azure.net^$stealth=3p-auth,domain=wakanim.tv
 @@||wakfutemporada2subs.blogspot.com^$generichide
 @@||wakudan.seesaa.net^$generichide
