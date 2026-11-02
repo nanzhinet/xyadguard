@@ -2,9 +2,9 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-11-02 12:38:50（北京时间）
+! Version: 2026-11-03 05:25:59（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 14885
+! Total count: 14888
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
@@ -1328,6 +1328,7 @@
 @@||adsafeprotected.com/vans-adapter-google-ima.js$script,domain=sportbible.com
 @@||adsales.snidigital.com/*/ads-config.min.js$script
 @@||adsatt.espn.starwave.com^$domain=livenewschat.eu,~script
+@@||adsboosters.xyz^$script,domain=upfilesgo.com
 @@||adsco.re/p$domain=shorterall.com
 @@||adsco.re/p$script,domain=fc-lc.xyz
 @@||adsdk.microsoft.com/ast/ast.js$script,domain=prisjakt.no
@@ -8559,6 +8560,7 @@
 @@||log.mmstat.com/eg.js$domain=v.youku.com
 @@||log.mmstat.com/eg.js$domain=youku.tv
 @@||log.rlsbb.in^$stealth=ip
+@@||log.rlsbb.to^$stealth=ip
 @@||log.strm.yandex.ru/log?StreamPlayer=*&error=YASP_WORKER_UNHANDLED_REJECTION$domain=kinopoisk.ru
 @@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
 @@||logcg.content-delivery.top/wp-content/plugins/bwp-minify/min/?f=
@@ -9762,6 +9764,7 @@
 @@||opuree.com/scr/detector/adsbygoogle.js
 @@||orange.fr/medias/toolkit/js/Wtbase.js
 @@||orange.fr/medias/toolkit/js/Wtinit.js
+@@||orbsdiacle.com^$domain=upfilesgo.com
 @@||order-order.com/wp-content/themes/orderorder/admanager.google.com.js
 @@||order-order.com^$generichide
 @@||orders.adobe.io/v4/orders/$stealth=3p-auth
