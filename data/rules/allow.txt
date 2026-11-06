@@ -2,7 +2,7 @@
 ! Title: XYADGUARD
 ! Homepage: https://github.com/nanzhinet/xyadguard
 ! Expires: 12 Hours
-! Version: 2026-11-06 03:31:58（北京时间）
+! Version: 2026-11-06 13:18:27（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
 ! Total count: 14898
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
@@ -103,7 +103,7 @@
 @@.pexcard.com^$jsinject,elemhide,extension
 @@.php$subdocument,stealth,domain=/dizipal\d+.com/
 @@.php?id=$script,domain=surirt.com
-@@.php?id=$third-party,subdocument,stealth=referrer,domain=thedaddy.pk
+@@.php?id=$third-party,subdocument,stealth=referrer,domain=thedaddy.li
 @@.php?play_vid=$subdocument,stealth=referrer,domain=xyflv.cc
 @@.png#$domain=3dpchip.com|club.tgfcer.com|digit77.com|e9china.net|upxin.net
 @@.png#$domain=almezoryae.com
@@ -306,7 +306,7 @@
 @@/dh-anti-adblocker/public/js/prebid-ads.js
 @@/dh-new-anti-adblocker-lite/public/js/prebid-ads.js
 @@/e/*$subdocument,stealth=referrer,domain=sportsonlinee.*|sportsonline.*|wikisport.info
-@@/e/*$third-party,subdocument,stealth=referrer,domain=thedaddy.pk
+@@/e/*$third-party,subdocument,stealth=referrer,domain=thedaddy.li
 @@/e/*?sub.info=https://svetserialu.to$stealth=referrer
 @@/email-decode.min.js$domain=linkneverdie.net
 @@/embed/*$stealth=referrer,subdocument,domain=ldcstreaming.info|sportsonline.*|elixx.xyz|primefoot.ru|lavents.la
@@ -2297,7 +2297,6 @@
 @@||autotrader.co.uk^*/advert$~third-party
 @@||av-drive.blogspot.com^$generichide
 @@||av-jamak.com^$generichide
-@@||av30.xyz/cs/2.js
 @@||av4u.info/source/plugin/unadblock^
 @@||avalanche.state.co.us/caic/pub_bc_avo.php?zone_id=
 @@||avclub.com^*/adManager.$script,~third-party
@@ -5206,6 +5205,7 @@
 @@||fls.doubleclick.net/activityi$domain=geforce.com
 @@||fls.doubleclick.net^$domain=usanetwork.com
 @@||fltaradio.com/js/ads.js
+@@||fluid.4strokemedia.com/www/delivery/$domain=3addedminutes.com
 @@||fluid.4strokemedia.com/www/delivery/$domain=footballtransfers.com
 @@||flycutlink.com^$generichide
 @@||flyert.com/plug/socialShare/js/social-share.
